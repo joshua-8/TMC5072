@@ -7,8 +7,8 @@
 *******************************************************************************/
 
 
-#ifndef CONFIG_H
-#define CONFIG_H
+#ifndef TMC_HELPERS_CONFIG_H_
+#define TMC_HELPERS_CONFIG_H_
 
 #include "Constants.h"
 #include "Types.h"
@@ -38,4 +38,4 @@ typedef struct
 	uint8_t                   channel;
 } ConfigurationTypeDef;
 
-#endif // CONFIG_H
+#endif /* TMC_HELPERS_CONFIG_H_ */
