@@ -1,2 +1,3 @@
+files in the trinamic folder come from:
 https://github.com/trinamic/TMC-API/tree/353e94c72ff98bda32faa331ebc6b85b7df691a9
-accessed 2023-10-18
+and were accessed 2023-10-18
