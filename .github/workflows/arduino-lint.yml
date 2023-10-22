@@ -8,3 +8,5 @@ jobs:
         with:
           library-manager: submit
           compliance: strict
+          project-type: all
+          recursive: true
