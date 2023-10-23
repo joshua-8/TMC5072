@@ -10,12 +10,29 @@ class TMC5072 {
 protected:
     SPIClass& spi;
     SPISettings spiset;
+    boolean whichMotor;
 
 public:
-    TMC5072(SPIClass& _spi, SPISettings _spiset)
+    TMC5072(SPIClass& _spi, SPISettings _spiset, boolean _whichMotor)
         : spi(_spi)
         , spiset(_spiset)
     {
+        whichMotor = _whichMotor;
+    }
+    void enable(byte toff = 4)
+    {
+        commWrite(TMC_WRITE_BIT + TMC5072_CHOPCONF(whichMotor), TMC5072_TOFF_MASK & toff); // turns on
+    }
+    void setCurrent(byte run, byte hold)
+    {
+        commWrite(TMC_WRITE_BIT + TMC5072_IHOLD_IRUN(whichMotor), (hold & TMC5072_IHOLD_MASK) | (TMC5072_IRUN_MASK & (run << TMC5072_IRUN_SHIFT)));
+    }
+    void setVel(int32_t speed, uint32_t accel = 0)
+    {
+        commWrite(TMC_WRITE_BIT + TMC5072_RAMPMODE(whichMotor), speed >= 0 ? 1 : 2);
+        if (accel != 0)
+            commWrite(TMC_WRITE_BIT + TMC5072_AMAX(whichMotor), accel);
+        commWrite(TMC_WRITE_BIT + TMC5072_VMAX(whichMotor), abs(speed));
     }
     /**
      * @brief calls spi.begin and sets up chip select pin
