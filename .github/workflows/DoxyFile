@@ -14,7 +14,7 @@
 # Values that contain spaces should be placed between quotes (\" \").
 
 # https://stackoverflow.com/a/13442157
-# USE_MDFILE_AS_MAINPAGE = ./README.md
+USE_MDFILE_AS_MAINPAGE = ./README.md
 
 #---------------------------------------------------------------------------
 # Project related configuration options
