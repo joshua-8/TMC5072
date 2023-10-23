@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['writeconfiguration_0',['writeConfiguration',['../_t_m_c5072_8c.html#af161674d708b5c55a557d1200f502bd7',1,'TMC5072.c']]]
+  ['value_0',['value',['../struct_t_m_c_register_constant.html#a8ee397638840f4461cd9b559fde7fc30',1,'TMCRegisterConstant']]],
+  ['velocity_1',['velocity',['../struct_t_m_c5072_type_def.html#a038cc0205eb08173ffd41c76e635e542',1,'TMC5072TypeDef']]]
 ];
