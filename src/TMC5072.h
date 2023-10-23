@@ -19,14 +19,41 @@ public:
     {
         whichMotor = _whichMotor;
     }
+    /**
+     * @brief turns on power to the motor
+     * @param  toff: 1-15, "sets the slow decay off time" see datasheet pate 57
+     * @retval None
+     */
     void enable(byte toff = 4)
     {
         commWrite(TMC_WRITE_BIT + TMC5072_CHOPCONF(whichMotor), TMC5072_TOFF_MASK & toff); // turns on
     }
+    /**
+     * @brief  turns off power to the motor and allows it to turn freely
+     * @retval None
+     */
+    void disable()
+    {
+        commWrite(TMC_WRITE_BIT + TMC5072_CHOPCONF(whichMotor), 0);
+    }
+    /**
+     * @brief See page 47 of the datasheet
+     * @note For high precision motor operation, work with a current scaling factor in the range 16 to 31
+     * @param  run: (0-31) scale factor for current when the motor is turning
+     * @param  hold: (0-31) scale factor for current when the motor is in stand still
+     * @retval None
+     */
     void setCurrent(byte run, byte hold)
     {
         commWrite(TMC_WRITE_BIT + TMC5072_IHOLD_IRUN(whichMotor), (hold & TMC5072_IHOLD_MASK) | (TMC5072_IRUN_MASK & (run << TMC5072_IRUN_SHIFT)));
     }
+    /**
+     * @brief
+     * @note
+     * @param  speed:
+     * @param  accel:
+     * @retval None
+     */
     void setVel(int32_t speed, uint32_t accel = 0)
     {
         commWrite(TMC_WRITE_BIT + TMC5072_RAMPMODE(whichMotor), speed >= 0 ? 1 : 2);
@@ -49,6 +76,13 @@ public:
         pinMode(SPI.pinSS(), OUTPUT);
         digitalWrite(SPI.pinSS(), HIGH);
     }
+    /**
+     * @brief
+     * @note
+     * @param  reg:
+     * @param  send:
+     * @retval None
+     */
     void commWrite(uint8_t reg, uint32_t send)
     {
         spi.beginTransaction(spiset);
@@ -58,6 +92,15 @@ public:
         digitalWrite(spi.pinSS(), HIGH);
         spi.endTransaction();
     }
+    /**
+     * @brief
+     * @note
+     * @param  reg:
+     * @param  send:
+     * @param  status:
+     * @param  data:
+     * @retval None
+     */
     void comm(uint8_t reg, uint32_t send, uint8_t& status, uint32_t& data)
     {
         spi.beginTransaction(spiset);
