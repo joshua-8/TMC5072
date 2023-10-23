@@ -84,8 +84,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0023c2629a8e092e270b45d3489e7782"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a0023c2629a8e092e270b45d3489e7782">TMC5072</a> (SPIClass &amp;_spi, SPISettings _spiset, boolean _whichMotor)</td></tr>
 <tr class="separator:a0023c2629a8e092e270b45d3489e7782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e1ed186b5bb3b894fd07447c52ed81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ae8e1ed186b5bb3b894fd07447c52ed81">enable</a> (byte toff=4)</td></tr>
+<tr class="memdesc:ae8e1ed186b5bb3b894fd07447c52ed81"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns on power to the motor  <a href="class_t_m_c5072.html#ae8e1ed186b5bb3b894fd07447c52ed81">More...</a><br /></td></tr>
 <tr class="separator:ae8e1ed186b5bb3b894fd07447c52ed81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a574ef5c09de7a575abddba18c02a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a42a574ef5c09de7a575abddba18c02a4">disable</a> ()</td></tr>
+<tr class="memdesc:a42a574ef5c09de7a575abddba18c02a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns off power to the motor and allows it to turn freely  <a href="class_t_m_c5072.html#a42a574ef5c09de7a575abddba18c02a4">More...</a><br /></td></tr>
+<tr class="separator:a42a574ef5c09de7a575abddba18c02a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6dd0a6db42c34a395a1de1e8761e462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ab6dd0a6db42c34a395a1de1e8761e462">setCurrent</a> (byte run, byte hold)</td></tr>
+<tr class="memdesc:ab6dd0a6db42c34a395a1de1e8761e462"><td class="mdescLeft">&#160;</td><td class="mdescRight">See page 47 of the datasheet.  <a href="class_t_m_c5072.html#ab6dd0a6db42c34a395a1de1e8761e462">More...</a><br /></td></tr>
 <tr class="separator:ab6dd0a6db42c34a395a1de1e8761e462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fcef5adf2a25c9b7a59ee9d290c98a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a3fcef5adf2a25c9b7a59ee9d290c98a9">setVel</a> (int32_t speed, uint32_t accel=0)</td></tr>
 <tr class="separator:a3fcef5adf2a25c9b7a59ee9d290c98a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,6 +266,22 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td></td></tr>
+    <tr><td class="paramname">send</td><td></td></tr>
+    <tr><td class="paramname">status</td><td></td></tr>
+    <tr><td class="paramname">data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -297,6 +318,53 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td></td></tr>
+    <tr><td class="paramname">send</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42a574ef5c09de7a575abddba18c02a4" name="a42a574ef5c09de7a575abddba18c02a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a574ef5c09de7a575abddba18c02a4">&#9670;&#160;</a></span>disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::disable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>turns off power to the motor and allows it to turn freely </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -323,6 +391,20 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>turns on power to the motor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toff</td><td>1-15, "sets the slow decay off time" see datasheet pate 57 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -360,6 +442,22 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>See page 47 of the datasheet. </p>
+<dl class="section note"><dt>Note</dt><dd>For high precision motor operation, work with a current scaling factor in the range 16 to 31 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">run</td><td>(0-31) scale factor for current when the motor is turning </td></tr>
+    <tr><td class="paramname">hold</td><td>(0-31) scale factor for current when the motor is in stand still </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3fcef5adf2a25c9b7a59ee9d290c98a9" name="a3fcef5adf2a25c9b7a59ee9d290c98a9"></a>
@@ -395,6 +493,20 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td></td></tr>
+    <tr><td class="paramname">accel</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

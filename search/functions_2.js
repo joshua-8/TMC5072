@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['enable_0',['enable',['../class_t_m_c5072.html#ae8e1ed186b5bb3b894fd07447c52ed81',1,'TMC5072']]]
+  ['disable_0',['disable',['../class_t_m_c5072.html#a42a574ef5c09de7a575abddba18c02a4',1,'TMC5072']]]
 ];
