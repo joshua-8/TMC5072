@@ -148,8 +148,8 @@
 #define TMC5072_VSTART_SHIFT             0 // min.: 0, max.: 262143, default: 0
 #define TMC5072_A1_MASK                  0xFFFF // A1_M1 // First acceleration between VSTART and V1 (unsigned)
 #define TMC5072_A1_SHIFT                 0 // min.: 0, max.: 65535, default: 0
-#define TMC5072_V1__MASK                 0x0FFFFF // V1_M1 // First acceleration / deceleration phase threshold velocity (unsigned) 0: Disables A1 and D1 phase, use AMAX, DMAX only
-#define TMC5072_V1__SHIFT                0 // min.: 0, max.: 1048575, default: 0
+#define TMC5072_V1_MASK                  0x0FFFFF // V1_M1 // First acceleration / deceleration phase threshold velocity (unsigned) 0: Disables A1 and D1 phase, use AMAX, DMAX only // EDITED BY JOSHUA-8
+#define TMC5072_V1_SHIFT                 0 // min.: 0, max.: 1048575, default: 0 // EDITED BY JOSHUA-8
 #define TMC5072_AMAX_MASK                0xFFFF // AMAX_M1 // Second acceleration between V1 and VMAX (unsigned) This is the acceleration and deceleration value for velocity mode.
 #define TMC5072_AMAX_SHIFT               0 // min.: 0, max.: 65535, default: 0
 #define TMC5072_VMAX_MASK                0x7FFFFF // VMAX_M1 // Motion ramp target velocity (for positioning ensure VMAX = VSTART) (unsigned) This is the target velocity in velocity mode. It can be changed any time during a motion.
