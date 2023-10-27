@@ -1,3 +1,10 @@
 files in the trinamic folder come from:
 https://github.com/trinamic/TMC-API/tree/353e94c72ff98bda32faa331ebc6b85b7df691a9
 and were accessed 2023-10-18
+
+
+edits:
+
+I removed an extra _ to match the naming convention of everything else for the following to registers:
+#define TMC5072_V1_MASK                  0x0FFFFF // V1_M1 // First acceleration / deceleration phase threshold velocity (unsigned) 0: Disables A1 and D1 phase, use AMAX, DMAX only // EDITED BY JOSHUA-8
+#define TMC5072_V1_SHIFT                 0 // min.: 0, max.: 1048575, default: 0 // EDITED BY JOSHUA-8
