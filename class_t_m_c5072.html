@@ -81,8 +81,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0023c2629a8e092e270b45d3489e7782"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a0023c2629a8e092e270b45d3489e7782">TMC5072</a> (SPIClass &amp;_spi, SPISettings _spiset, boolean _whichMotor)</td></tr>
-<tr class="separator:a0023c2629a8e092e270b45d3489e7782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae5221a33a428d6af491646483a6519"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#acae5221a33a428d6af491646483a6519">TMC5072</a> (SPIClass &amp;_spi, SPISettings _spiset, byte _whichMotor)</td></tr>
+<tr class="separator:acae5221a33a428d6af491646483a6519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed51396e536eb156a5d8ae169cd80b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#abed51396e536eb156a5d8ae169cd80b8">setVelAndAccelRaw</a> (uint32_t vmax, uint16_t amax, uint16_t dmax)</td></tr>
+<tr class="separator:abed51396e536eb156a5d8ae169cd80b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf756ddf2b25c3357d2afc952682b063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#abf756ddf2b25c3357d2afc952682b063">setTargetRaw</a> (int32_t target)</td></tr>
+<tr class="separator:abf756ddf2b25c3357d2afc952682b063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e1ed186b5bb3b894fd07447c52ed81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ae8e1ed186b5bb3b894fd07447c52ed81">enable</a> (byte toff=4)</td></tr>
 <tr class="memdesc:ae8e1ed186b5bb3b894fd07447c52ed81"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns on power to the motor  <a href="class_t_m_c5072.html#ae8e1ed186b5bb3b894fd07447c52ed81">More...</a><br /></td></tr>
 <tr class="separator:ae8e1ed186b5bb3b894fd07447c52ed81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,11 +96,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6dd0a6db42c34a395a1de1e8761e462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ab6dd0a6db42c34a395a1de1e8761e462">setCurrent</a> (byte run, byte hold)</td></tr>
 <tr class="memdesc:ab6dd0a6db42c34a395a1de1e8761e462"><td class="mdescLeft">&#160;</td><td class="mdescRight">See page 47 of the datasheet.  <a href="class_t_m_c5072.html#ab6dd0a6db42c34a395a1de1e8761e462">More...</a><br /></td></tr>
 <tr class="separator:ab6dd0a6db42c34a395a1de1e8761e462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fcef5adf2a25c9b7a59ee9d290c98a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a3fcef5adf2a25c9b7a59ee9d290c98a9">setVel</a> (int32_t speed, uint32_t accel=0)</td></tr>
-<tr class="separator:a3fcef5adf2a25c9b7a59ee9d290c98a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6566580d5ff00508305d53907549ddab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a6566580d5ff00508305d53907549ddab">setVelRaw</a> (int32_t speed, uint32_t accel=0)</td></tr>
+<tr class="memdesc:a6566580d5ff00508305d53907549ddab"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the driver to velocity mode and sets a velocity target and optionally changes the acceleration  <a href="class_t_m_c5072.html#a6566580d5ff00508305d53907549ddab">More...</a><br /></td></tr>
+<tr class="separator:a6566580d5ff00508305d53907549ddab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19f8d07f628ad4840dedcc5bad5eb724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a19f8d07f628ad4840dedcc5bad5eb724">beginSPI</a> (byte SCK, byte SDI, byte SDO, byte CS)</td></tr>
 <tr class="memdesc:a19f8d07f628ad4840dedcc5bad5eb724"><td class="mdescLeft">&#160;</td><td class="mdescRight">calls spi.begin and sets up chip select pin  <a href="class_t_m_c5072.html#a19f8d07f628ad4840dedcc5bad5eb724">More...</a><br /></td></tr>
 <tr class="separator:a19f8d07f628ad4840dedcc5bad5eb724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9710394d8af85109d410791a9e0335e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ac9710394d8af85109d410791a9e0335e">beginSPIcs</a> (byte CS)</td></tr>
+<tr class="memdesc:ac9710394d8af85109d410791a9e0335e"><td class="mdescLeft">&#160;</td><td class="mdescRight">call this for every driver IC with which pin is connected to the driver's chip select pin  <a href="class_t_m_c5072.html#ac9710394d8af85109d410791a9e0335e">More...</a><br /></td></tr>
+<tr class="separator:ac9710394d8af85109d410791a9e0335e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cc844e2c394d07cbc04609227165fcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a4cc844e2c394d07cbc04609227165fcb">commWrite</a> (uint8_t reg, uint32_t send)</td></tr>
 <tr class="separator:a4cc844e2c394d07cbc04609227165fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a663654f79f66bdaa49b534c5fa2500b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a663654f79f66bdaa49b534c5fa2500b7">comm</a> (uint8_t reg, uint32_t send, uint8_t &amp;status, uint32_t &amp;data)</td></tr>
@@ -108,12 +116,12 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aa446fe099bc4f1109de744a458ecb7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d7fec22651162305df7208df663f19b"><td class="memItemLeft" align="right" valign="top">SPISettings&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a1d7fec22651162305df7208df663f19b">spiset</a></td></tr>
 <tr class="separator:a1d7fec22651162305df7208df663f19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8afe4917d5976df065e7caf52c9a7d7"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#af8afe4917d5976df065e7caf52c9a7d7">whichMotor</a></td></tr>
-<tr class="separator:af8afe4917d5976df065e7caf52c9a7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c326875cd49509cdd2a5fcc037d947b"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a4c326875cd49509cdd2a5fcc037d947b">whichMotor</a></td></tr>
+<tr class="separator:a4c326875cd49509cdd2a5fcc037d947b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0023c2629a8e092e270b45d3489e7782" name="a0023c2629a8e092e270b45d3489e7782"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0023c2629a8e092e270b45d3489e7782">&#9670;&#160;</a></span>TMC5072()</h2>
+<a id="acae5221a33a428d6af491646483a6519" name="acae5221a33a428d6af491646483a6519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acae5221a33a428d6af491646483a6519">&#9670;&#160;</a></span>TMC5072()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +144,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boolean&#160;</td>
+          <td class="paramtype">byte&#160;</td>
           <td class="paramname"><em>_whichMotor</em>&#160;</td>
         </tr>
         <tr>
@@ -208,6 +216,46 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">SCK</td><td>clock </td></tr>
     <tr><td class="paramname">SDI</td><td>AKA CIPO and MISO </td></tr>
     <tr><td class="paramname">SDO</td><td>AKA COPI and MOSI </td></tr>
+    <tr><td class="paramname">CS</td><td>chip select, AKA SS </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac9710394d8af85109d410791a9e0335e" name="ac9710394d8af85109d410791a9e0335e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9710394d8af85109d410791a9e0335e">&#9670;&#160;</a></span>beginSPIcs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::beginSPIcs </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>CS</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>call this for every driver IC with which pin is connected to the driver's chip select pin </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">CS</td><td>chip select, AKA SS </td></tr>
   </table>
   </dd>
@@ -395,7 +443,7 @@ Protected Attributes</h2></td></tr>
 <p>turns on power to the motor </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">toff</td><td>1-15, "sets the slow decay off time" see datasheet pate 57 </td></tr>
+    <tr><td class="paramname">toff</td><td>1-15, "sets the slow decay off time" see datasheet page 57 </td></tr>
   </table>
   </dd>
 </dl>
@@ -460,8 +508,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3fcef5adf2a25c9b7a59ee9d290c98a9" name="a3fcef5adf2a25c9b7a59ee9d290c98a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fcef5adf2a25c9b7a59ee9d290c98a9">&#9670;&#160;</a></span>setVel()</h2>
+<a id="abf756ddf2b25c3357d2afc952682b063" name="abf756ddf2b25c3357d2afc952682b063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf756ddf2b25c3357d2afc952682b063">&#9670;&#160;</a></span>setTargetRaw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,7 +518,75 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TMC5072::setVel </td>
+          <td class="memname">void TMC5072::setTargetRaw </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abed51396e536eb156a5d8ae169cd80b8" name="abed51396e536eb156a5d8ae169cd80b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed51396e536eb156a5d8ae169cd80b8">&#9670;&#160;</a></span>setVelAndAccelRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::setVelAndAccelRaw </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>vmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>amax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>dmax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6566580d5ff00508305d53907549ddab" name="a6566580d5ff00508305d53907549ddab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6566580d5ff00508305d53907549ddab">&#9670;&#160;</a></span>setVelRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::setVelRaw </td>
           <td>(</td>
           <td class="paramtype">int32_t&#160;</td>
           <td class="paramname"><em>speed</em>, </td>
@@ -493,11 +609,12 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd></dd></dl>
+
+<p>sets the driver to velocity mode and sets a velocity target and optionally changes the acceleration </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">speed</td><td></td></tr>
-    <tr><td class="paramname">accel</td><td></td></tr>
+    <tr><td class="paramname">speed</td><td>(int32_t) velocity, no unit conversion </td></tr>
+    <tr><td class="paramname">accel</td><td>(uint32_t) accel, no unit conversion </td></tr>
   </table>
   </dd>
 </dl>
@@ -555,8 +672,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af8afe4917d5976df065e7caf52c9a7d7" name="af8afe4917d5976df065e7caf52c9a7d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8afe4917d5976df065e7caf52c9a7d7">&#9670;&#160;</a></span>whichMotor</h2>
+<a id="a4c326875cd49509cdd2a5fcc037d947b" name="a4c326875cd49509cdd2a5fcc037d947b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c326875cd49509cdd2a5fcc037d947b">&#9670;&#160;</a></span>whichMotor</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -565,7 +682,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean TMC5072::whichMotor</td>
+          <td class="memname">byte TMC5072::whichMotor</td>
         </tr>
       </table>
   </td>

@@ -74,14 +74,14 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p >The TMC-API is a portable C library for working with Trinamic ICs in embedded projects. It is CPU-independent and self-contained (no external dependencies).</p>
 <p >The TMC-API allows easy access to the registers of Trinamic ICs. It provides definitions for all IC registers and their bitfields.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Installation</h1>
 <p >To set up your project to use the TMC-API, simply copy the source files you need:</p><ul>
 <li><b>tmc/helpers/</b> contains helper files needed by all other TMC-API source files. Always copy this folder.</li>
 <li><b>tmc/ic/</b> contains all the files for different ICs. For each IC you want to use, copy the corresponding folder.</li>
 <li><b>tmc/ramp/</b> contains simple software linear ramp functions that can be used in applications. Copy them if needed by your project.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Usage</h1>
 <p ><b>For a reference usage of the TMC-API</b>, visit the <a href="https://github.com/trinamic/TMC-EvalSystem">TMC-Evalsystem</a></p>
 <p ><b>To use the TMC-API</b>, perform the following steps in your code:</p><ul>
@@ -91,7 +91,7 @@ Usage</h1>
 <li>After initializing, calling <b>tmcXXXX_reset()</b> or <b>tmcXXXX_restore()</b>, the TMC-API will write multiple registers to the IC (referred to as <em>IC configuration</em>). Per call to <b>tmcXXXX_periodicJob()</b>, one register will be written until IC configuration is completed.</li>
 <li>Once the IC configuration is completed, you can use <b>tmcXXXX_readInt()</b> and <b>tmcXXXX_writeInt()</b> to read and write registers.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Changelog</h1>
 <p ><b>Version 3.06: (Beta)</b></p><ul>
 <li>Full TMC2160 support</li>

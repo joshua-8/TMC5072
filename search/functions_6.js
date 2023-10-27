@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tmc5072_0',['TMC5072',['../class_t_m_c5072.html#a0023c2629a8e092e270b45d3489e7782',1,'TMC5072']]],
+  ['tmc5072_0',['TMC5072',['../class_t_m_c5072.html#acae5221a33a428d6af491646483a6519',1,'TMC5072']]],
   ['tmc5072_5ffillshadowregisters_1',['tmc5072_fillShadowRegisters',['../_t_m_c5072_8c.html#ac8dbfdb34f4a8abc2c59947d904ea835',1,'tmc5072_fillShadowRegisters(TMC5072TypeDef *tmc5072):&#160;TMC5072.c'],['../trinamic_2tmc_2ic_2_t_m_c5072_2_t_m_c5072_8h.html#ac8dbfdb34f4a8abc2c59947d904ea835',1,'tmc5072_fillShadowRegisters(TMC5072TypeDef *tmc5072):&#160;TMC5072.c']]],
   ['tmc5072_5finit_2',['tmc5072_init',['../_t_m_c5072_8c.html#a089c7550b2a5c511e38ad359611a6168',1,'tmc5072_init(TMC5072TypeDef *tmc5072, uint8_t channel, ConfigurationTypeDef *tmc5072_config, const int32_t *registerResetState):&#160;TMC5072.c'],['../trinamic_2tmc_2ic_2_t_m_c5072_2_t_m_c5072_8h.html#a089c7550b2a5c511e38ad359611a6168',1,'tmc5072_init(TMC5072TypeDef *tmc5072, uint8_t channel, ConfigurationTypeDef *tmc5072_config, const int32_t *registerResetState):&#160;TMC5072.c']]],
   ['tmc5072_5fleft_3',['tmc5072_left',['../_t_m_c5072_8c.html#a57346536de62206e5264e812eaf1f1aa',1,'tmc5072_left(TMC5072TypeDef *tmc5072, uint8_t motor, int32_t velocity):&#160;TMC5072.c'],['../trinamic_2tmc_2ic_2_t_m_c5072_2_t_m_c5072_8h.html#a57346536de62206e5264e812eaf1f1aa',1,'tmc5072_left(TMC5072TypeDef *tmc5072, uint8_t motor, int32_t velocity):&#160;TMC5072.c']]],
