@@ -38,6 +38,7 @@ void loop()
         uint8_t a;
         uint32_t b;
         driver1.comm(TMC5072_XTARGET(1), 0, a, b);
+
         Serial.print(a);
         Serial.print(",");
         Serial.println(b);
