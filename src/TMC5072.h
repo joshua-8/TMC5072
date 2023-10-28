@@ -36,7 +36,7 @@ public:
         statusbits = 0;
         rampstatbits = 0;
     }
-    void movePositionRaw(int32_t target)
+    void moveToPositionRaw(int32_t target)
     {
         commWrite(tmc_commpact(true, RAMPMODE, whichMotor, 0));
         commWrite(tmc_commpact(true, XTARGET, whichMotor, target));

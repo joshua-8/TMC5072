@@ -18,11 +18,11 @@ void loop()
         Serial.println("driver restarted");
         driver1setup();
     }
-    driver1.movePositionRaw(70000);
+    driver1.moveToPositionRaw(70000);
 
     delay(5000);
 
-    driver1.movePositionRaw(0);
+    driver1.moveToPositionRaw(0);
 
     do { // blocking wait until at target
         delay(1);
