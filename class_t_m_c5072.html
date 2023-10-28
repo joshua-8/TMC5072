@@ -83,10 +83,18 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acae5221a33a428d6af491646483a6519"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#acae5221a33a428d6af491646483a6519">TMC5072</a> (SPIClass &amp;_spi, SPISettings _spiset, byte _whichMotor)</td></tr>
 <tr class="separator:acae5221a33a428d6af491646483a6519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c491169535e05b5f4a0a2aeab7944f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a2c491169535e05b5f4a0a2aeab7944f6">movePositionRaw</a> (int32_t target)</td></tr>
+<tr class="separator:a2c491169535e05b5f4a0a2aeab7944f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf047b346149cdd46c38314f497ff61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a4bf047b346149cdd46c38314f497ff61">setVelocitiesAndAccelerationsRaw</a> (uint32_t v1, uint32_t vmax, uint32_t a1, uint32_t amax, uint32_t dmax, uint32_t d1)</td></tr>
+<tr class="separator:a4bf047b346149cdd46c38314f497ff61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ace56c83fdc165f3e4790a555befc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a16ace56c83fdc165f3e4790a555befc9">setVStopAndVStartRaw</a> (uint32_t vstart, uint32_t vstop)</td></tr>
+<tr class="separator:a16ace56c83fdc165f3e4790a555befc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed51396e536eb156a5d8ae169cd80b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#abed51396e536eb156a5d8ae169cd80b8">setVelAndAccelRaw</a> (uint32_t vmax, uint16_t amax, uint16_t dmax)</td></tr>
+<tr class="memdesc:abed51396e536eb156a5d8ae169cd80b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets velocity and acceleration settings for velocity mode.  <a href="class_t_m_c5072.html#abed51396e536eb156a5d8ae169cd80b8">More...</a><br /></td></tr>
 <tr class="separator:abed51396e536eb156a5d8ae169cd80b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf756ddf2b25c3357d2afc952682b063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#abf756ddf2b25c3357d2afc952682b063">setTargetRaw</a> (int32_t target)</td></tr>
-<tr class="separator:abf756ddf2b25c3357d2afc952682b063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad104c9b6ba25dde0cc46806049a1e182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ad104c9b6ba25dde0cc46806049a1e182">moveVelRaw</a> (int32_t speed, uint32_t accel=0)</td></tr>
+<tr class="memdesc:ad104c9b6ba25dde0cc46806049a1e182"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the driver to velocity mode and sets a velocity target and optionally changes the acceleration  <a href="class_t_m_c5072.html#ad104c9b6ba25dde0cc46806049a1e182">More...</a><br /></td></tr>
+<tr class="separator:ad104c9b6ba25dde0cc46806049a1e182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e1ed186b5bb3b894fd07447c52ed81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ae8e1ed186b5bb3b894fd07447c52ed81">enable</a> (byte toff=4)</td></tr>
 <tr class="memdesc:ae8e1ed186b5bb3b894fd07447c52ed81"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns on power to the motor  <a href="class_t_m_c5072.html#ae8e1ed186b5bb3b894fd07447c52ed81">More...</a><br /></td></tr>
 <tr class="separator:ae8e1ed186b5bb3b894fd07447c52ed81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,19 +104,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6dd0a6db42c34a395a1de1e8761e462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ab6dd0a6db42c34a395a1de1e8761e462">setCurrent</a> (byte run, byte hold)</td></tr>
 <tr class="memdesc:ab6dd0a6db42c34a395a1de1e8761e462"><td class="mdescLeft">&#160;</td><td class="mdescRight">See page 47 of the datasheet.  <a href="class_t_m_c5072.html#ab6dd0a6db42c34a395a1de1e8761e462">More...</a><br /></td></tr>
 <tr class="separator:ab6dd0a6db42c34a395a1de1e8761e462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6566580d5ff00508305d53907549ddab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a6566580d5ff00508305d53907549ddab">setVelRaw</a> (int32_t speed, uint32_t accel=0)</td></tr>
-<tr class="memdesc:a6566580d5ff00508305d53907549ddab"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the driver to velocity mode and sets a velocity target and optionally changes the acceleration  <a href="class_t_m_c5072.html#a6566580d5ff00508305d53907549ddab">More...</a><br /></td></tr>
-<tr class="separator:a6566580d5ff00508305d53907549ddab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19f8d07f628ad4840dedcc5bad5eb724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a19f8d07f628ad4840dedcc5bad5eb724">beginSPI</a> (byte SCK, byte SDI, byte SDO, byte CS)</td></tr>
 <tr class="memdesc:a19f8d07f628ad4840dedcc5bad5eb724"><td class="mdescLeft">&#160;</td><td class="mdescRight">calls spi.begin and sets up chip select pin  <a href="class_t_m_c5072.html#a19f8d07f628ad4840dedcc5bad5eb724">More...</a><br /></td></tr>
 <tr class="separator:a19f8d07f628ad4840dedcc5bad5eb724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9710394d8af85109d410791a9e0335e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ac9710394d8af85109d410791a9e0335e">beginSPIcs</a> (byte CS)</td></tr>
 <tr class="memdesc:ac9710394d8af85109d410791a9e0335e"><td class="mdescLeft">&#160;</td><td class="mdescRight">call this for every driver IC with which pin is connected to the driver's chip select pin  <a href="class_t_m_c5072.html#ac9710394d8af85109d410791a9e0335e">More...</a><br /></td></tr>
 <tr class="separator:ac9710394d8af85109d410791a9e0335e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d0d3e54447394e2c415ff169092088"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a11d0d3e54447394e2c415ff169092088">isNotAtTarget</a> (boolean read=true)</td></tr>
+<tr class="separator:a11d0d3e54447394e2c415ff169092088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca6d554127dd15c32101326db87c79a"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a9ca6d554127dd15c32101326db87c79a">isAtTarget</a> (boolean read=true)</td></tr>
+<tr class="separator:a9ca6d554127dd15c32101326db87c79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeab291777b2887e3fdecfcf20162188"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_types_8h.html#ac2a9e79eb120216f855626495b7bd18a">uint16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#afeab291777b2887e3fdecfcf20162188">getRampStatusBits</a> (boolean read=true)</td></tr>
+<tr class="separator:afeab291777b2887e3fdecfcf20162188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43255e1df97da7d5f40eeadfbdb3eea5"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a43255e1df97da7d5f40eeadfbdb3eea5">getStopSwitchStatus</a> (boolean read=true)</td></tr>
+<tr class="separator:a43255e1df97da7d5f40eeadfbdb3eea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17248645aae5aeb22d926327b3bcc678"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a17248645aae5aeb22d926327b3bcc678">getVelocityReachedStatus</a> (boolean read=true)</td></tr>
+<tr class="separator:a17248645aae5aeb22d926327b3bcc678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492b2ef9d6d22bb8bc89033933f7af9c"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a492b2ef9d6d22bb8bc89033933f7af9c">getDriverErrorStatus</a> (boolean read=true, boolean clear=false)</td></tr>
+<tr class="separator:a492b2ef9d6d22bb8bc89033933f7af9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33dd99746f36046ec16a7760bd59e2f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#af33dd99746f36046ec16a7760bd59e2f">getDriverResetFlag</a> (boolean read=true, boolean clear=false)</td></tr>
+<tr class="separator:af33dd99746f36046ec16a7760bd59e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888ea3cc0af06577b5fba34b03a7c10c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a888ea3cc0af06577b5fba34b03a7c10c">clearGSTAT</a> ()</td></tr>
+<tr class="separator:a888ea3cc0af06577b5fba34b03a7c10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ad918f95cccc0156afd0044cec45c8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ae2ad918f95cccc0156afd0044cec45c8">getStatusBits</a> (boolean read=true)</td></tr>
+<tr class="separator:ae2ad918f95cccc0156afd0044cec45c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cc844e2c394d07cbc04609227165fcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a4cc844e2c394d07cbc04609227165fcb">commWrite</a> (uint8_t reg, uint32_t send)</td></tr>
 <tr class="separator:a4cc844e2c394d07cbc04609227165fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a663654f79f66bdaa49b534c5fa2500b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a663654f79f66bdaa49b534c5fa2500b7">comm</a> (uint8_t reg, uint32_t send, uint8_t &amp;status, uint32_t &amp;data)</td></tr>
-<tr class="separator:a663654f79f66bdaa49b534c5fa2500b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d9c76bf07030daddc750ce9745d689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a96d9c76bf07030daddc750ce9745d689">comm</a> (uint8_t reg, uint32_t send, uint32_t *data)</td></tr>
+<tr class="separator:a96d9c76bf07030daddc750ce9745d689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -118,6 +141,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a1d7fec22651162305df7208df663f19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c326875cd49509cdd2a5fcc037d947b"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a4c326875cd49509cdd2a5fcc037d947b">whichMotor</a></td></tr>
 <tr class="separator:a4c326875cd49509cdd2a5fcc037d947b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a10aebba97da152e31fdd77e4bf6d87"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a7a10aebba97da152e31fdd77e4bf6d87">statusbits</a></td></tr>
+<tr class="separator:a7a10aebba97da152e31fdd77e4bf6d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d92c9debfae9b75f3938cfaba8eec79"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a7d92c9debfae9b75f3938cfaba8eec79">rampstatbits</a></td></tr>
+<tr class="separator:a7d92c9debfae9b75f3938cfaba8eec79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acae5221a33a428d6af491646483a6519" name="acae5221a33a428d6af491646483a6519"></a>
@@ -216,7 +243,7 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">SCK</td><td>clock </td></tr>
     <tr><td class="paramname">SDI</td><td>AKA CIPO and MISO </td></tr>
     <tr><td class="paramname">SDO</td><td>AKA COPI and MOSI </td></tr>
-    <tr><td class="paramname">CS</td><td>chip select, AKA SS </td></tr>
+    <tr><td class="paramname">CS</td><td>chip select pin for this driver, AKA SS </td></tr>
   </table>
   </dd>
 </dl>
@@ -269,8 +296,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a663654f79f66bdaa49b534c5fa2500b7" name="a663654f79f66bdaa49b534c5fa2500b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a663654f79f66bdaa49b534c5fa2500b7">&#9670;&#160;</a></span>comm()</h2>
+<a id="a888ea3cc0af06577b5fba34b03a7c10c" name="a888ea3cc0af06577b5fba34b03a7c10c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888ea3cc0af06577b5fba34b03a7c10c">&#9670;&#160;</a></span>clearGSTAT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::clearGSTAT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96d9c76bf07030daddc750ce9745d689" name="a96d9c76bf07030daddc750ce9745d689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d9c76bf07030daddc750ce9745d689">&#9670;&#160;</a></span>comm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,13 +345,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t &amp;&#160;</td>
-          <td class="paramname"><em>status</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramtype">uint32_t *&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -456,6 +502,311 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a492b2ef9d6d22bb8bc89033933f7af9c" name="a492b2ef9d6d22bb8bc89033933f7af9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492b2ef9d6d22bb8bc89033933f7af9c">&#9670;&#160;</a></span>getDriverErrorStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean TMC5072::getDriverErrorStatus </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>read</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>clear</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af33dd99746f36046ec16a7760bd59e2f" name="af33dd99746f36046ec16a7760bd59e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33dd99746f36046ec16a7760bd59e2f">&#9670;&#160;</a></span>getDriverResetFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean TMC5072::getDriverResetFlag </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>read</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>clear</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afeab291777b2887e3fdecfcf20162188" name="afeab291777b2887e3fdecfcf20162188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeab291777b2887e3fdecfcf20162188">&#9670;&#160;</a></span>getRampStatusBits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_types_8h.html#ac2a9e79eb120216f855626495b7bd18a">uint16</a> TMC5072::getRampStatusBits </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>read</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2ad918f95cccc0156afd0044cec45c8" name="ae2ad918f95cccc0156afd0044cec45c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ad918f95cccc0156afd0044cec45c8">&#9670;&#160;</a></span>getStatusBits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TMC5072::getStatusBits </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>read</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43255e1df97da7d5f40eeadfbdb3eea5" name="a43255e1df97da7d5f40eeadfbdb3eea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43255e1df97da7d5f40eeadfbdb3eea5">&#9670;&#160;</a></span>getStopSwitchStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean TMC5072::getStopSwitchStatus </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>read</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17248645aae5aeb22d926327b3bcc678" name="a17248645aae5aeb22d926327b3bcc678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17248645aae5aeb22d926327b3bcc678">&#9670;&#160;</a></span>getVelocityReachedStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean TMC5072::getVelocityReachedStatus </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>read</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ca6d554127dd15c32101326db87c79a" name="a9ca6d554127dd15c32101326db87c79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca6d554127dd15c32101326db87c79a">&#9670;&#160;</a></span>isAtTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean TMC5072::isAtTarget </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>read</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11d0d3e54447394e2c415ff169092088" name="a11d0d3e54447394e2c415ff169092088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d0d3e54447394e2c415ff169092088">&#9670;&#160;</a></span>isNotAtTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean TMC5072::isNotAtTarget </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>read</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c491169535e05b5f4a0a2aeab7944f6" name="a2c491169535e05b5f4a0a2aeab7944f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c491169535e05b5f4a0a2aeab7944f6">&#9670;&#160;</a></span>movePositionRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::movePositionRaw </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad104c9b6ba25dde0cc46806049a1e182" name="ad104c9b6ba25dde0cc46806049a1e182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad104c9b6ba25dde0cc46806049a1e182">&#9670;&#160;</a></span>moveVelRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::moveVelRaw </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>accel</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets the driver to velocity mode and sets a velocity target and optionally changes the acceleration </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>(int32_t) velocity, no unit conversion </td></tr>
+    <tr><td class="paramname">accel</td><td>(uint32_t) accel, no unit conversion </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab6dd0a6db42c34a395a1de1e8761e462" name="ab6dd0a6db42c34a395a1de1e8761e462"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6dd0a6db42c34a395a1de1e8761e462">&#9670;&#160;</a></span>setCurrent()</h2>
 
@@ -508,32 +859,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="abf756ddf2b25c3357d2afc952682b063" name="abf756ddf2b25c3357d2afc952682b063"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf756ddf2b25c3357d2afc952682b063">&#9670;&#160;</a></span>setTargetRaw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TMC5072::setTargetRaw </td>
-          <td>(</td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>target</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abed51396e536eb156a5d8ae169cd80b8" name="abed51396e536eb156a5d8ae169cd80b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abed51396e536eb156a5d8ae169cd80b8">&#9670;&#160;</a></span>setVelAndAccelRaw()</h2>
 
@@ -574,10 +899,26 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sets velocity and acceleration settings for velocity mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vmax</td><td></td></tr>
+    <tr><td class="paramname">amax</td><td></td></tr>
+    <tr><td class="paramname">dmax</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a6566580d5ff00508305d53907549ddab" name="a6566580d5ff00508305d53907549ddab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6566580d5ff00508305d53907549ddab">&#9670;&#160;</a></span>setVelRaw()</h2>
+<a id="a4bf047b346149cdd46c38314f497ff61" name="a4bf047b346149cdd46c38314f497ff61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf047b346149cdd46c38314f497ff61">&#9670;&#160;</a></span>setVelocitiesAndAccelerationsRaw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -586,16 +927,40 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TMC5072::setVelRaw </td>
+          <td class="memname">void TMC5072::setVelocitiesAndAccelerationsRaw </td>
           <td>(</td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>speed</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>accel</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>vmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>a1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>amax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>d1</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -610,11 +975,46 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>sets the driver to velocity mode and sets a velocity target and optionally changes the acceleration </p>
+</div>
+</div>
+<a id="a16ace56c83fdc165f3e4790a555befc9" name="a16ace56c83fdc165f3e4790a555befc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ace56c83fdc165f3e4790a555befc9">&#9670;&#160;</a></span>setVStopAndVStartRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::setVStopAndVStartRaw </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>vstart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>vstop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>The datasheet says that VSTART should be &gt;= VSTOP </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">speed</td><td>(int32_t) velocity, no unit conversion </td></tr>
-    <tr><td class="paramname">accel</td><td>(uint32_t) accel, no unit conversion </td></tr>
+    <tr><td class="paramname">vstart</td><td></td></tr>
+    <tr><td class="paramname">vstop</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -628,6 +1028,28 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7d92c9debfae9b75f3938cfaba8eec79" name="a7d92c9debfae9b75f3938cfaba8eec79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d92c9debfae9b75f3938cfaba8eec79">&#9670;&#160;</a></span>rampstatbits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t TMC5072::rampstatbits</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa446fe099bc4f1109de744a458ecb7da" name="aa446fe099bc4f1109de744a458ecb7da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa446fe099bc4f1109de744a458ecb7da">&#9670;&#160;</a></span>spi</h2>
 
@@ -661,6 +1083,28 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">SPISettings TMC5072::spiset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a10aebba97da152e31fdd77e4bf6d87" name="a7a10aebba97da152e31fdd77e4bf6d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a10aebba97da152e31fdd77e4bf6d87">&#9670;&#160;</a></span>statusbits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TMC5072::statusbits</td>
         </tr>
       </table>
   </td>

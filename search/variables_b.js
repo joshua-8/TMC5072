@@ -7,5 +7,6 @@ var searchData=
   ['spiset_4',['spiset',['../class_t_m_c5072.html#a1d7fec22651162305df7208df663f19b',1,'TMC5072']]],
   ['sqrttable_5',['sqrttable',['../_functions_8c.html#ab0b5c2a7f2d65eaf4fb954d8a85b79f5',1,'Functions.c']]],
   ['state_6',['state',['../struct_configuration_type_def.html#a66620734852c25fd9e1a3e33f5b4535b',1,'ConfigurationTypeDef']]],
-  ['sublicense_7',['sublicense',['../license_8txt.html#a9f571168d2ee9a598450704a59d048d3',1,'license.txt']]]
+  ['statusbits_7',['statusbits',['../class_t_m_c5072.html#a7a10aebba97da152e31fdd77e4bf6d87',1,'TMC5072']]],
+  ['sublicense_8',['sublicense',['../license_8txt.html#a9f571168d2ee9a598450704a59d048d3',1,'license.txt']]]
 ];
