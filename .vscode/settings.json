@@ -71,6 +71,7 @@
         "Trinamic",
         "TSTEP",
         "TZEROWAIT",
+        "undervoltage",
         "VACT",
         "VACTUAL",
         "VCOOLTHRS",
