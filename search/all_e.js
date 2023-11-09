@@ -1,21 +1,11 @@
 var searchData=
 [
-  ['s16_0',['s16',['../_types_8h.html#aa980e2c02ba2305e0f489d5650655425',1,'Types.h']]],
-  ['s32_1',['s32',['../_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4',1,'Types.h']]],
-  ['s8_2',['s8',['../_types_8h.html#a9e382f207c65ca13ab4ae98363aeda80',1,'Types.h']]],
-  ['setcurrent_3',['setCurrent',['../class_t_m_c5072.html#ab6dd0a6db42c34a395a1de1e8761e462',1,'TMC5072']]],
-  ['setvelocitiesandaccelerations_4',['setVelocitiesAndAccelerations',['../class_t_m_c5072.html#aad8f949510cb5cd536ebdb6bbd596cb7',1,'TMC5072']]],
-  ['setvelocitiesandaccelerationsraw_5',['setVelocitiesAndAccelerationsRaw',['../class_t_m_c5072.html#a4bf047b346149cdd46c38314f497ff61',1,'TMC5072']]],
-  ['setvstopandvstartraw_6',['setVStopAndVStartRaw',['../class_t_m_c5072.html#a16ace56c83fdc165f3e4790a555befc9',1,'TMC5072']]],
-  ['setxactual_7',['setXActual',['../class_t_m_c5072.html#abe057734c7de1e5fe4aa69bae8b6cd40',1,'TMC5072']]],
-  ['setxactualraw_8',['setXActualRaw',['../class_t_m_c5072.html#a191c3fb202c360d31ad112d1cd4ffc28',1,'TMC5072']]],
-  ['shadowregister_9',['shadowRegister',['../struct_configuration_type_def.html#ab7eb5b6432147d0ca5471e1f128ba503',1,'ConfigurationTypeDef']]],
-  ['so_10',['so',['../license_8txt.html#ad33c8f6a68363f2875b84f7c4ca98aba',1,'license.txt']]],
-  ['software_11',['Software',['../license_8txt.html#acd5f6fc3bc0ca6669b69716abdd68f6a',1,'license.txt']]],
-  ['spi_12',['spi',['../class_t_m_c5072.html#aa446fe099bc4f1109de744a458ecb7da',1,'TMC5072']]],
-  ['spiset_13',['spiset',['../class_t_m_c5072.html#a1d7fec22651162305df7208df663f19b',1,'TMC5072']]],
-  ['sqrttable_14',['sqrttable',['../_functions_8c.html#ab0b5c2a7f2d65eaf4fb954d8a85b79f5',1,'Functions.c']]],
-  ['state_15',['state',['../struct_configuration_type_def.html#a66620734852c25fd9e1a3e33f5b4535b',1,'ConfigurationTypeDef']]],
-  ['statusbits_16',['statusbits',['../class_t_m_c5072.html#a7a10aebba97da152e31fdd77e4bf6d87',1,'TMC5072']]],
-  ['sublicense_17',['sublicense',['../license_8txt.html#a9f571168d2ee9a598450704a59d048d3',1,'license.txt']]]
+  ['rampstatbits_0',['rampstatbits',['../class_t_m_c5072.html#a7d92c9debfae9b75f3938cfaba8eec79',1,'TMC5072']]],
+  ['readme_2emd_1',['README.md',['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../src_2trinamic_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]],
+  ['registeraccess_2',['registerAccess',['../struct_t_m_c5072_type_def.html#a163c950355896fce5680702580aaefe9',1,'TMC5072TypeDef']]],
+  ['registeraccess_2eh_3',['RegisterAccess.h',['../_register_access_8h.html',1,'']]],
+  ['registerresetstate_4',['registerResetState',['../struct_t_m_c5072_type_def.html#ae37ba366f7a2b67877638539136c37fa',1,'TMC5072TypeDef']]],
+  ['reset_5',['reset',['../struct_configuration_type_def.html#a4844564a6e4680e17d2330dd01eb773b',1,'ConfigurationTypeDef']]],
+  ['restore_6',['restore',['../struct_configuration_type_def.html#a55b2b5ac72df4a5b6de127cc606302b3',1,'ConfigurationTypeDef']]],
+  ['restriction_7',['restriction',['../license_8txt.html#af6e42a41d4c1cf711ce91ba8a9536d5e',1,'license.txt']]]
 ];

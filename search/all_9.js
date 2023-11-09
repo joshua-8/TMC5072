@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['liability_0',['LIABILITY',['../license_8txt.html#a0441f1f46651ed649cb81d0bb5c9b022',1,'license.txt']]],
-  ['license_2etxt_1',['license.txt',['../license_8txt.html',1,'']]]
+  ['kind_0',['KIND',['../license_8txt.html#a21bee792560027a3b96a9a882b5828d5',1,'license.txt']]]
 ];
