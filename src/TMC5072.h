@@ -28,6 +28,14 @@ protected:
     byte whichMotor;
     uint8_t statusbits;
     uint32_t rampstatbits;
+
+    uint32_t d_v1;
+    uint32_t d_vmax;
+    uint32_t d_a1;
+    uint32_t d_amax;
+    uint32_t d_dmax;
+    uint32_t d_d1;
+
     /**
      * @brief  (accel in steps per ta^2)*accelScaler = accel in your chosen units
      */
@@ -42,7 +50,7 @@ protected:
     float positionScaler = 1.0;
 
 public:
-    TMC5072(SPIClass& _spi, SPISettings _spiset, byte _whichMotor, float _positionScaler = 1.0, float _velocityScaler = 1.0, float _accelScaler = 1.0)
+    TMC5072(SPIClass& _spi, SPISettings _spiset, byte _whichMotor, float _positionScaler = 1.0, float _velocityScaler = 1.0, float _accelScaler = 1.0, float _d_v1 = 0, float _d_vmax = 1, float _d_a1 = 1, float _d_amax = 1, float _d_dmax = 1, float _d_d1 = 1)
         : spi(_spi)
         , spiset(_spiset)
     {
@@ -52,6 +60,8 @@ public:
         positionScaler = _positionScaler;
         velocityScaler = _velocityScaler;
         accelScaler = _accelScaler;
+
+        setDefaultVelocitiesAndAccelerations(_d_v1, _d_vmax, _d_a1, _d_amax, _d_dmax, _d_d1);
     }
 
     /**
@@ -63,9 +73,10 @@ public:
      * @param  finalSpeed:
      * @param  switchBackDistance:
      * @param  switchExtraDistance:
+     * @param  smallMovementTimeoutMs:
      * @retval 0 if successful, other numbers if not
      */
-    int home(float maxHomingDistance = 15, float switchOffset = 0.1, float finalSpeed = 0.1, float switchBackDistance = 0.25, float switchExtraDistance = 0.125)
+    int home(float maxHomingDistance = 15, float switchOffset = 0.1, float finalSpeed = 0.1, float switchBackDistance = 0.25, float switchExtraDistance = 0.125, unsigned long smallMovementTimeoutMS = 5000)
     {
         enum State {
             start,
@@ -83,7 +94,9 @@ public:
         uint32_t xlatch;
         commWrite(TMC5072_SWMODE(whichMotor) + TMC_WRITE_BIT, ((true << TMC5072_LATCH_L_ACTIVE_SHIFT) | (true << TMC5072_EN_SOFTSTOP_SHIFT) | (true << TMC5072_STOP_L_ENABLE_SHIFT))); // latch xactual into xlatch when left switch activated
 
+        unsigned long stateStarted = millis();
         while (true) { // returned from to exit
+            stateStarted = millis();
             switch (state) {
             case start:
                 setXActualRaw(0);
@@ -103,7 +116,7 @@ public:
                 do {
                     delay(1);
                     sw = getStopSwitchStatus(true);
-                } while (!sw && isNotAtTarget(true));
+                } while (!sw && isNotAtTarget(true) && (millis() - stateStarted) < maxHomingDistance / velocityScaler * 1500);
                 if (sw) {
                     xlatch = commRead(TMC5072_XLATCH(whichMotor));
                     state = startMovingAwayFromSwitch;
@@ -118,7 +131,7 @@ public:
             case movingAwayFromSwitch:
                 do {
                     delay(1);
-                } while (isNotAtTarget(true));
+                } while (isNotAtTarget(true) && (millis() - stateStarted) < smallMovementTimeoutMS);
                 sw = getStopSwitchStatus(true);
                 if (sw) { // switch still active for some reason, error
                     return 2; // switch didn't deactivate
@@ -136,10 +149,10 @@ public:
                 do {
                     delay(1);
                     sw = getStopSwitchStatus(true);
-                } while (!sw && isNotAtTarget(true));
+                } while (!sw && isNotAtTarget(true) && (millis() - stateStarted) < smallMovementTimeoutMS);
                 if (sw) {
                     xlatch = commRead(TMC5072_XACTUAL(whichMotor));
-                    setVels(1); // reset velocity
+                    resetToDefaultVelocitiesAndAccelerations();
                     moveToPositionRaw(xlatch + switchOffset / positionScaler);
                     state = movingToFinalZero;
                 } else {
@@ -150,12 +163,12 @@ public:
                 commWrite(TMC5072_SWMODE(whichMotor) + TMC_WRITE_BIT, 0); // latch xactual into xlatch when left switch activated
                 do {
                     delay(1);
-                } while (isNotAtTarget(true));
+                } while (isNotAtTarget(true) && (millis() - stateStarted) < smallMovementTimeoutMS);
                 setXActualRaw(0);
                 moveToPositionRaw(0);
                 do {
                     delay(1);
-                } while (isNotAtTarget(true));
+                } while (isNotAtTarget(true) && (millis() - stateStarted) < smallMovementTimeoutMS);
                 if (getStopSwitchStatus(true)) {
                     return 4; // didn't move off the switch
                 }
@@ -233,6 +246,14 @@ public:
     {
         setVelocitiesAndAccelerationsRaw(v1 / velocityScaler, vmax / velocityScaler, a1 / accelScaler, amax / accelScaler, dmax / accelScaler, d1 / accelScaler);
     }
+    void setDefaultVelocitiesAndAccelerations(float v1, float vmax, float a1, float amax, float dmax, float d1)
+    {
+        setDefaultVelocitiesAndAccelerationsRaw(v1 / velocityScaler, vmax / velocityScaler, a1 / accelScaler, amax / accelScaler, dmax / accelScaler, d1 / accelScaler);
+    }
+    void resetToDefaultVelocitiesAndAccelerations()
+    {
+        setVelocitiesAndAccelerationsRaw(d_v1, d_vmax, d_a1, d_amax, d_dmax, d_d1);
+    }
 
     void setXActualRaw(int32_t xactual)
     {
@@ -269,6 +290,18 @@ public:
         commWrite(tmc_commpact(true, AMAX, whichMotor, amax));
         commWrite(tmc_commpact(true, DMAX, whichMotor, dmax));
         commWrite(tmc_commpact(true, D1, whichMotor, d1));
+    }
+    void setDefaultVelocitiesAndAccelerationsRaw(uint32_t v1, uint32_t vmax, uint32_t a1, uint32_t amax, uint32_t dmax, uint32_t d1, boolean reset = false)
+    {
+        d_v1 = v1;
+        d_vmax = vmax;
+        d_a1 = a1;
+        d_amax = amax;
+        d_dmax = dmax;
+        d_d1 = d1;
+        if (reset) {
+            resetToDefaultVelocitiesAndAccelerations();
+        }
     }
 
     void setAccelsRaw(uint32_t amax, uint32_t a1 = 0)
