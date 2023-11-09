@@ -3,7 +3,7 @@ var searchData=
   ['table_0',['table',['../struct_c_r_c_type_def.html#ab3e50b31f8af300e972cd3e0e205ec8f',1,'CRCTypeDef']]],
   ['tmc_2dapi_1',['TMC-API',['../md_src_trinamic__r_e_a_d_m_e.html',1,'']]],
   ['tmc0572_2',['TMC0572',['../index.html',1,'']]],
-  ['tmc5072_3',['TMC5072',['../class_t_m_c5072.html',1,'TMC5072'],['../class_t_m_c5072.html#af60f0c62a5d886df3dd33b8b8bc7a538',1,'TMC5072::TMC5072()']]],
+  ['tmc5072_3',['TMC5072',['../class_t_m_c5072.html',1,'TMC5072'],['../class_t_m_c5072.html#a7fa6c9f42604d398bcca0beb97ce4d5d',1,'TMC5072::TMC5072()']]],
   ['tmc5072_2ec_4',['TMC5072.c',['../_t_m_c5072_8c.html',1,'']]],
   ['tmc5072_2eh_5',['TMC5072.h',['../trinamic_2tmc_2ic_2_t_m_c5072_2_t_m_c5072_8h.html',1,'(Global Namespace)'],['../_t_m_c5072_8h.html',1,'(Global Namespace)']]],
   ['tmc5072_5fcallback_6',['tmc5072_callback',['../trinamic_2tmc_2ic_2_t_m_c5072_2_t_m_c5072_8h.html#ad9b283bb473f83b9f30b6cfd32258434',1,'TMC5072.h']]],

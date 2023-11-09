@@ -6,6 +6,7 @@ var searchData=
   ['registeraccess_2eh_3',['RegisterAccess.h',['../_register_access_8h.html',1,'']]],
   ['registerresetstate_4',['registerResetState',['../struct_t_m_c5072_type_def.html#ae37ba366f7a2b67877638539136c37fa',1,'TMC5072TypeDef']]],
   ['reset_5',['reset',['../struct_configuration_type_def.html#a4844564a6e4680e17d2330dd01eb773b',1,'ConfigurationTypeDef']]],
-  ['restore_6',['restore',['../struct_configuration_type_def.html#a55b2b5ac72df4a5b6de127cc606302b3',1,'ConfigurationTypeDef']]],
-  ['restriction_7',['restriction',['../license_8txt.html#af6e42a41d4c1cf711ce91ba8a9536d5e',1,'license.txt']]]
+  ['resettodefaultvelocitiesandaccelerations_6',['resetToDefaultVelocitiesAndAccelerations',['../class_t_m_c5072.html#ad7c5ab530c270d3b7da37d41a63a564e',1,'TMC5072']]],
+  ['restore_7',['restore',['../struct_configuration_type_def.html#a55b2b5ac72df4a5b6de127cc606302b3',1,'ConfigurationTypeDef']]],
+  ['restriction_8',['restriction',['../license_8txt.html#af6e42a41d4c1cf711ce91ba8a9536d5e',1,'license.txt']]]
 ];

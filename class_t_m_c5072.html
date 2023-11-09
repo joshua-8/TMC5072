@@ -81,11 +81,11 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af60f0c62a5d886df3dd33b8b8bc7a538"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#af60f0c62a5d886df3dd33b8b8bc7a538">TMC5072</a> (SPIClass &amp;_spi, SPISettings _spiset, byte _whichMotor, float _positionScaler=1.0, float _velocityScaler=1.0, float _accelScaler=1.0)</td></tr>
-<tr class="separator:af60f0c62a5d886df3dd33b8b8bc7a538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaeb28a3a5cc493ea56ea515995106d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#aaaeb28a3a5cc493ea56ea515995106d7">home</a> (float maxHomingDistance=15, float switchOffset=0.1, float finalSpeed=0.1, float switchBackDistance=0.25, float switchExtraDistance=0.125)</td></tr>
-<tr class="memdesc:aaaeb28a3a5cc493ea56ea515995106d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">home motor against a switch  <a href="class_t_m_c5072.html#aaaeb28a3a5cc493ea56ea515995106d7">More...</a><br /></td></tr>
-<tr class="separator:aaaeb28a3a5cc493ea56ea515995106d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa6c9f42604d398bcca0beb97ce4d5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a7fa6c9f42604d398bcca0beb97ce4d5d">TMC5072</a> (SPIClass &amp;_spi, SPISettings _spiset, byte _whichMotor, float _positionScaler=1.0, float _velocityScaler=1.0, float _accelScaler=1.0, float _d_v1=0, float _d_vmax=1, float _d_a1=1, float _d_amax=1, float _d_dmax=1, float _d_d1=1)</td></tr>
+<tr class="separator:a7fa6c9f42604d398bcca0beb97ce4d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b84ff5fc9d6d1e88b1f05d11631acd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a3b84ff5fc9d6d1e88b1f05d11631acd3">home</a> (float maxHomingDistance=15, float switchOffset=0.1, float finalSpeed=0.1, float switchBackDistance=0.25, float switchExtraDistance=0.125, unsigned long smallMovementTimeoutMS=5000)</td></tr>
+<tr class="memdesc:a3b84ff5fc9d6d1e88b1f05d11631acd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">home motor against a switch  <a href="class_t_m_c5072.html#a3b84ff5fc9d6d1e88b1f05d11631acd3">More...</a><br /></td></tr>
+<tr class="separator:a3b84ff5fc9d6d1e88b1f05d11631acd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dafae5fdc2d2e9aa60ca293107042bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a1dafae5fdc2d2e9aa60ca293107042bb">setAccels</a> (float amax, float a1=0)</td></tr>
 <tr class="separator:a1dafae5fdc2d2e9aa60ca293107042bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a426d8a3ea9a5420c21cea3280149b8b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a426d8a3ea9a5420c21cea3280149b8b8">setDecels</a> (float dmax, float d1=0)</td></tr>
@@ -109,6 +109,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad8f949510cb5cd536ebdb6bbd596cb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#aad8f949510cb5cd536ebdb6bbd596cb7">setVelocitiesAndAccelerations</a> (float v1, float vmax, float a1, float amax, float dmax, float d1)</td></tr>
 <tr class="memdesc:aad8f949510cb5cd536ebdb6bbd596cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set all the velocity and acceleration settings for a position control move see datasheet 6.2.1 and 11.2.2  <a href="class_t_m_c5072.html#aad8f949510cb5cd536ebdb6bbd596cb7">More...</a><br /></td></tr>
 <tr class="separator:aad8f949510cb5cd536ebdb6bbd596cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe79e9332e24a9efdd67f9d86cec091e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#afe79e9332e24a9efdd67f9d86cec091e">setDefaultVelocitiesAndAccelerations</a> (float v1, float vmax, float a1, float amax, float dmax, float d1)</td></tr>
+<tr class="separator:afe79e9332e24a9efdd67f9d86cec091e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c5ab530c270d3b7da37d41a63a564e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ad7c5ab530c270d3b7da37d41a63a564e">resetToDefaultVelocitiesAndAccelerations</a> ()</td></tr>
+<tr class="separator:ad7c5ab530c270d3b7da37d41a63a564e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a191c3fb202c360d31ad112d1cd4ffc28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a191c3fb202c360d31ad112d1cd4ffc28">setXActualRaw</a> (int32_t xactual)</td></tr>
 <tr class="separator:a191c3fb202c360d31ad112d1cd4ffc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12bbcca3df9b16063e2b24adb33faaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#aa12bbcca3df9b16063e2b24adb33faaa">moveToPositionRaw</a> (uint32_t target)</td></tr>
@@ -117,6 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4bf047b346149cdd46c38314f497ff61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a4bf047b346149cdd46c38314f497ff61">setVelocitiesAndAccelerationsRaw</a> (uint32_t v1, uint32_t vmax, uint32_t a1, uint32_t amax, uint32_t dmax, uint32_t d1)</td></tr>
 <tr class="memdesc:a4bf047b346149cdd46c38314f497ff61"><td class="mdescLeft">&#160;</td><td class="mdescRight">set all the velocity and acceleration settings for a position control move see datasheet 6.2.1 and 11.2.2  <a href="class_t_m_c5072.html#a4bf047b346149cdd46c38314f497ff61">More...</a><br /></td></tr>
 <tr class="separator:a4bf047b346149cdd46c38314f497ff61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b166066b27058dc8b65b9e5d2a923d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a50b166066b27058dc8b65b9e5d2a923d">setDefaultVelocitiesAndAccelerationsRaw</a> (uint32_t v1, uint32_t vmax, uint32_t a1, uint32_t amax, uint32_t dmax, uint32_t d1, boolean reset=false)</td></tr>
+<tr class="separator:a50b166066b27058dc8b65b9e5d2a923d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc81997972d6cfedbbdab3c8e1079598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#abc81997972d6cfedbbdab3c8e1079598">setAccelsRaw</a> (uint32_t amax, uint32_t a1=0)</td></tr>
 <tr class="separator:abc81997972d6cfedbbdab3c8e1079598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afabae0e4fa65bcde6c1727509d401f89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#afabae0e4fa65bcde6c1727509d401f89">setDecelsRaw</a> (uint32_t dmax, uint32_t d1=0)</td></tr>
@@ -193,6 +199,18 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7a10aebba97da152e31fdd77e4bf6d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d92c9debfae9b75f3938cfaba8eec79"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a7d92c9debfae9b75f3938cfaba8eec79">rampstatbits</a></td></tr>
 <tr class="separator:a7d92c9debfae9b75f3938cfaba8eec79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22427099dddb3d9184dd07c8b01fa327"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a22427099dddb3d9184dd07c8b01fa327">d_v1</a></td></tr>
+<tr class="separator:a22427099dddb3d9184dd07c8b01fa327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e8c068e5cdcb8474e2a880ddaa553d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a27e8c068e5cdcb8474e2a880ddaa553d">d_vmax</a></td></tr>
+<tr class="separator:a27e8c068e5cdcb8474e2a880ddaa553d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0fd130ca28ebe591ecc5c81f5a6719"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a8e0fd130ca28ebe591ecc5c81f5a6719">d_a1</a></td></tr>
+<tr class="separator:a8e0fd130ca28ebe591ecc5c81f5a6719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5c281163b2a657dede563732bf51c6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a2e5c281163b2a657dede563732bf51c6">d_amax</a></td></tr>
+<tr class="separator:a2e5c281163b2a657dede563732bf51c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ecb4d4f5be5cd48e5ea20b5fb0a822"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#ae4ecb4d4f5be5cd48e5ea20b5fb0a822">d_dmax</a></td></tr>
+<tr class="separator:ae4ecb4d4f5be5cd48e5ea20b5fb0a822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbecd85ceeafd95cf3a09dee492dd3b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a0bbecd85ceeafd95cf3a09dee492dd3b">d_d1</a></td></tr>
+<tr class="separator:a0bbecd85ceeafd95cf3a09dee492dd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65599861c4ebd43084bbbabda84f458d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a65599861c4ebd43084bbbabda84f458d">accelScaler</a> = 1.0</td></tr>
 <tr class="memdesc:a65599861c4ebd43084bbbabda84f458d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(accel in steps per ta^2)*accelScaler = accel in your chosen units  <a href="class_t_m_c5072.html#a65599861c4ebd43084bbbabda84f458d">More...</a><br /></td></tr>
 <tr class="separator:a65599861c4ebd43084bbbabda84f458d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,8 +222,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ab1edf5759683036ddf106b34dd1b1c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af60f0c62a5d886df3dd33b8b8bc7a538" name="af60f0c62a5d886df3dd33b8b8bc7a538"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af60f0c62a5d886df3dd33b8b8bc7a538">&#9670;&#160;</a></span>TMC5072()</h2>
+<a id="a7fa6c9f42604d398bcca0beb97ce4d5d" name="a7fa6c9f42604d398bcca0beb97ce4d5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa6c9f42604d398bcca0beb97ce4d5d">&#9670;&#160;</a></span>TMC5072()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +265,43 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_accelScaler</em> = <code>1.0</code>&#160;</td>
+          <td class="paramname"><em>_accelScaler</em> = <code>1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_d_v1</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_d_vmax</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_d_a1</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_d_amax</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_d_dmax</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_d_d1</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -890,8 +944,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aaaeb28a3a5cc493ea56ea515995106d7" name="aaaeb28a3a5cc493ea56ea515995106d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaeb28a3a5cc493ea56ea515995106d7">&#9670;&#160;</a></span>home()</h2>
+<a id="a3b84ff5fc9d6d1e88b1f05d11631acd3" name="a3b84ff5fc9d6d1e88b1f05d11631acd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b84ff5fc9d6d1e88b1f05d11631acd3">&#9670;&#160;</a></span>home()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -927,7 +981,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>switchExtraDistance</em> = <code>0.125</code>&#160;</td>
+          <td class="paramname"><em>switchExtraDistance</em> = <code>0.125</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>smallMovementTimeoutMS</em> = <code>5000</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -951,6 +1011,7 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">finalSpeed</td><td></td></tr>
     <tr><td class="paramname">switchBackDistance</td><td></td></tr>
     <tr><td class="paramname">switchExtraDistance</td><td></td></tr>
+    <tr><td class="paramname">smallMovementTimeoutMs</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1227,6 +1288,31 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad7c5ab530c270d3b7da37d41a63a564e" name="ad7c5ab530c270d3b7da37d41a63a564e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c5ab530c270d3b7da37d41a63a564e">&#9670;&#160;</a></span>resetToDefaultVelocitiesAndAccelerations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::resetToDefaultVelocitiesAndAccelerations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1dafae5fdc2d2e9aa60ca293107042bb" name="a1dafae5fdc2d2e9aa60ca293107042bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dafae5fdc2d2e9aa60ca293107042bb">&#9670;&#160;</a></span>setAccels()</h2>
 
@@ -1433,6 +1519,132 @@ Protected Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>d1</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe79e9332e24a9efdd67f9d86cec091e" name="afe79e9332e24a9efdd67f9d86cec091e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe79e9332e24a9efdd67f9d86cec091e">&#9670;&#160;</a></span>setDefaultVelocitiesAndAccelerations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::setDefaultVelocitiesAndAccelerations </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>amax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>d1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50b166066b27058dc8b65b9e5d2a923d" name="a50b166066b27058dc8b65b9e5d2a923d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b166066b27058dc8b65b9e5d2a923d">&#9670;&#160;</a></span>setDefaultVelocitiesAndAccelerationsRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TMC5072::setDefaultVelocitiesAndAccelerationsRaw </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>vmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>a1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>amax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>dmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>d1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>reset</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1857,6 +2069,138 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>(accel in steps per ta^2)*accelScaler = accel in your chosen units </p>
+
+</div>
+</div>
+<a id="a8e0fd130ca28ebe591ecc5c81f5a6719" name="a8e0fd130ca28ebe591ecc5c81f5a6719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0fd130ca28ebe591ecc5c81f5a6719">&#9670;&#160;</a></span>d_a1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t TMC5072::d_a1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e5c281163b2a657dede563732bf51c6" name="a2e5c281163b2a657dede563732bf51c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5c281163b2a657dede563732bf51c6">&#9670;&#160;</a></span>d_amax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t TMC5072::d_amax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bbecd85ceeafd95cf3a09dee492dd3b" name="a0bbecd85ceeafd95cf3a09dee492dd3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bbecd85ceeafd95cf3a09dee492dd3b">&#9670;&#160;</a></span>d_d1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t TMC5072::d_d1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4ecb4d4f5be5cd48e5ea20b5fb0a822" name="ae4ecb4d4f5be5cd48e5ea20b5fb0a822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ecb4d4f5be5cd48e5ea20b5fb0a822">&#9670;&#160;</a></span>d_dmax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t TMC5072::d_dmax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22427099dddb3d9184dd07c8b01fa327" name="a22427099dddb3d9184dd07c8b01fa327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22427099dddb3d9184dd07c8b01fa327">&#9670;&#160;</a></span>d_v1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t TMC5072::d_v1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27e8c068e5cdcb8474e2a880ddaa553d" name="a27e8c068e5cdcb8474e2a880ddaa553d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27e8c068e5cdcb8474e2a880ddaa553d">&#9670;&#160;</a></span>d_vmax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t TMC5072::d_vmax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
