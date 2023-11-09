@@ -21,10 +21,14 @@ void setup()
 }
 void loop()
 {
-    driver1.setVelocitiesAndAccelerations(0, 2, .1, .1, 100, 100);
-    driver1.moveToPosition(1);
-    delay(6000);
+    driver1.setVels(2);
+    driver1.setAccels(5);
+    driver1.setDecels(5);
+    driver1.moveToPosition(.1);
+    delay(60);
+    Serial.println(driver1.getStopSwitchStatus(true));
     // driver1.moveVel(-1);
-    driver1.moveToPositionRaw(0);
-    delay(6000);
+    driver1.moveToPosition(0);
+    delay(60);
+    Serial.println(driver1.getStopSwitchStatus(true));
 }
