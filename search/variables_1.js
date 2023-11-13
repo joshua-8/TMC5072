@@ -9,5 +9,6 @@ var searchData=
   ['configindex_6',['configIndex',['../struct_configuration_type_def.html#a03e747ab5e07e7cca760bd15b4ee0743',1,'ConfigurationTypeDef']]],
   ['contract_7',['CONTRACT',['../license_8txt.html#a0d659448dac5e185d9b9895b123b7735',1,'license.txt']]],
   ['copy_8',['copy',['../license_8txt.html#a5fc027ff17a37592346d4ce949961132',1,'license.txt']]],
-  ['crctables_9',['CRCTables',['../_c_r_c_8c.html#a67da2e812767527420ab1747f13c4ae7',1,'CRC.c']]]
+  ['crctables_9',['CRCTables',['../_c_r_c_8c.html#a67da2e812767527420ab1747f13c4ae7',1,'CRC.c']]],
+  ['cspin_10',['CSpin',['../class_t_m_c5072.html#a2a6077dfecaa3d7760a3d400f9133f58',1,'TMC5072']]]
 ];

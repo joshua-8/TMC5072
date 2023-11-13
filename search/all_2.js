@@ -24,5 +24,6 @@ var searchData=
   ['crc_2ec_21',['CRC.c',['../_c_r_c_8c.html',1,'']]],
   ['crc_2eh_22',['CRC.h',['../_c_r_c_8h.html',1,'']]],
   ['crctables_23',['CRCTables',['../_c_r_c_8c.html#a67da2e812767527420ab1747f13c4ae7',1,'CRC.c']]],
-  ['crctypedef_24',['CRCTypeDef',['../struct_c_r_c_type_def.html',1,'']]]
+  ['crctypedef_24',['CRCTypeDef',['../struct_c_r_c_type_def.html',1,'']]],
+  ['cspin_25',['CSpin',['../class_t_m_c5072.html#a2a6077dfecaa3d7760a3d400f9133f58',1,'TMC5072']]]
 ];
