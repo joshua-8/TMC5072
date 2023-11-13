@@ -29,6 +29,8 @@ protected:
     uint8_t statusbits;
     uint32_t rampstatbits;
 
+    byte CSpin;
+
     uint32_t d_v1;
     uint32_t d_vmax;
     uint32_t d_a1;
@@ -60,6 +62,8 @@ public:
         positionScaler = _positionScaler;
         velocityScaler = _velocityScaler;
         accelScaler = _accelScaler;
+
+        CSpin = spi.pinSS();
 
         setDefaultVelocitiesAndAccelerations(_d_v1, _d_vmax, _d_a1, _d_amax, _d_dmax, _d_d1);
     }
@@ -406,8 +410,8 @@ public:
      */
     void beginSPIcs(byte CS)
     {
-        pinMode(SPI.pinSS(), OUTPUT);
-        digitalWrite(SPI.pinSS(), HIGH);
+        pinMode(CSpin, OUTPUT);
+        digitalWrite(CSpin, HIGH);
     }
 
     /**
@@ -560,7 +564,7 @@ public:
     void comm(uint8_t reg, uint32_t send, uint32_t* data)
     {
         spi.beginTransaction(spiset);
-        digitalWrite(spi.pinSS(), LOW);
+        digitalWrite(CSpin, LOW);
 
         statusbits = spi.transfer(reg);
 
@@ -568,7 +572,7 @@ public:
         if (data != NULL)
             *data = databits;
 
-        digitalWrite(spi.pinSS(), HIGH);
+        digitalWrite(CSpin, HIGH);
         spi.endTransaction();
     }
 };
