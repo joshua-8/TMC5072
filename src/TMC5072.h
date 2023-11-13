@@ -81,7 +81,7 @@ public:
      * @param  firstMovementTimeoutMs:
      * @retval 0 if successful, other numbers if not
      */
-    int home(float maxHomingDistance = 15, float switchOffset = 0.1, float finalSpeed = 0.1, float switchBackDistance = 0.25, float switchExtraDistance = 0.125, unsigned long smallMovementTimeoutMS = 5000, unsigned long firstMovementTimeoutMS = 15000)
+    int home(float maxHomingDistance = 15, float switchOffset = 1, float finalSpeed = 0.1, float switchBackDistance = 0.25, float switchExtraDistance = 0.125, unsigned long smallMovementTimeoutMS = 5000, unsigned long firstMovementTimeoutMS = 15000)
     {
         enum State {
             start,
