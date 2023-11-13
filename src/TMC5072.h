@@ -399,7 +399,7 @@ public:
      */
     void beginSPI(byte SCK, byte SDI, byte SDO, byte CS)
     {
-        SPI.begin(SCK, MISO, MOSI, SS);
+        SPI.begin(SCK, MISO, MOSI);
         beginSPIcs(CS);
     }
 
