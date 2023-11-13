@@ -78,9 +78,10 @@ public:
      * @param  switchBackDistance:
      * @param  switchExtraDistance:
      * @param  smallMovementTimeoutMs:
+     * @param  firstMovementTimeoutMs:
      * @retval 0 if successful, other numbers if not
      */
-    int home(float maxHomingDistance = 15, float switchOffset = 0.1, float finalSpeed = 0.1, float switchBackDistance = 0.25, float switchExtraDistance = 0.125, unsigned long smallMovementTimeoutMS = 5000)
+    int home(float maxHomingDistance = 15, float switchOffset = 0.1, float finalSpeed = 0.1, float switchBackDistance = 0.25, float switchExtraDistance = 0.125, unsigned long smallMovementTimeoutMS = 5000, unsigned long firstMovementTimeoutMS = 15000)
     {
         enum State {
             start,
@@ -120,7 +121,7 @@ public:
                 do {
                     delay(1);
                     sw = getStopSwitchStatus(true);
-                } while (!sw && isNotAtTarget(true) && (millis() - stateStarted) < maxHomingDistance / velocityScaler * 1500);
+                } while (!sw && isNotAtTarget(true) && (millis() - stateStarted) < firstMovementTimeoutMS);
                 if (sw) {
                     xlatch = commRead(TMC5072_XLATCH(whichMotor));
                     state = startMovingAwayFromSwitch;
