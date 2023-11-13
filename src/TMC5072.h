@@ -405,6 +405,7 @@ public:
 
     /**
      * @brief call this for every driver IC with which pin is connected to the driver's chip select pin
+     * @note  call this before SPI.begin()
      * @param  CS: chip select pin for this driver, AKA SS
      * @retval None
      */
