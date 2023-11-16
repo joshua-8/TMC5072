@@ -386,7 +386,7 @@ public:
      */
     void setCurrent(byte run, byte hold)
     {
-        commWrite(TMC_WRITE_BIT + TMC5072_IHOLD_IRUN(whichMotor), (TMC5072_IHOLD_MASK & (run << TMC5072_IHOLD_SHIFT)) | (TMC5072_IRUN_MASK & (run << TMC5072_IRUN_SHIFT)));
+        commWrite(TMC_WRITE_BIT + TMC5072_IHOLD_IRUN(whichMotor), (TMC5072_IHOLD_MASK & (hold << TMC5072_IHOLD_SHIFT)) | (TMC5072_IRUN_MASK & (run << TMC5072_IRUN_SHIFT)));
     }
 
     /**
