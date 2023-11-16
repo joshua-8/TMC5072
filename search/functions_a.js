@@ -6,7 +6,7 @@ var searchData=
   ['setcurrent_3',['setCurrent',['../class_t_m_c5072.html#ab6dd0a6db42c34a395a1de1e8761e462',1,'TMC5072']]],
   ['setdecels_4',['setDecels',['../class_t_m_c5072.html#a426d8a3ea9a5420c21cea3280149b8b8',1,'TMC5072']]],
   ['setdecelsraw_5',['setDecelsRaw',['../class_t_m_c5072.html#afabae0e4fa65bcde6c1727509d401f89',1,'TMC5072']]],
-  ['setdefaultvelocitiesandaccelerations_6',['setDefaultVelocitiesAndAccelerations',['../class_t_m_c5072.html#afe79e9332e24a9efdd67f9d86cec091e',1,'TMC5072']]],
+  ['setdefaultvelocitiesandaccelerations_6',['setDefaultVelocitiesAndAccelerations',['../class_t_m_c5072.html#a1a29dd455ae217ad1614a64d613bdc31',1,'TMC5072']]],
   ['setdefaultvelocitiesandaccelerationsraw_7',['setDefaultVelocitiesAndAccelerationsRaw',['../class_t_m_c5072.html#a50b166066b27058dc8b65b9e5d2a923d',1,'TMC5072']]],
   ['setpositionscaler_8',['setPositionScaler',['../class_t_m_c5072.html#afd56c75c6cb1de8d57f0b314cdf380ec',1,'TMC5072']]],
   ['setvelocitiesandaccelerations_9',['setVelocitiesAndAccelerations',['../class_t_m_c5072.html#aad8f949510cb5cd536ebdb6bbd596cb7',1,'TMC5072']]],
