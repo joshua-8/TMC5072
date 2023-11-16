@@ -65,7 +65,7 @@ public:
 
         CSpin = spi.pinSS();
 
-        setDefaultVelocitiesAndAccelerations(_d_v1, _d_vmax, _d_a1, _d_amax, _d_dmax, _d_d1);
+        setDefaultVelocitiesAndAccelerations(_d_v1, _d_vmax, _d_a1, _d_amax, _d_dmax, _d_d1, true);
     }
 
     /**
@@ -251,9 +251,9 @@ public:
     {
         setVelocitiesAndAccelerationsRaw(v1 / velocityScaler, vmax / velocityScaler, a1 / accelScaler, amax / accelScaler, dmax / accelScaler, d1 / accelScaler);
     }
-    void setDefaultVelocitiesAndAccelerations(float v1, float vmax, float a1, float amax, float dmax, float d1)
+    void setDefaultVelocitiesAndAccelerations(float v1, float vmax, float a1, float amax, float dmax, float d1, boolean reset = false)
     {
-        setDefaultVelocitiesAndAccelerationsRaw(v1 / velocityScaler, vmax / velocityScaler, a1 / accelScaler, amax / accelScaler, dmax / accelScaler, d1 / accelScaler);
+        setDefaultVelocitiesAndAccelerationsRaw(v1 / velocityScaler, vmax / velocityScaler, a1 / accelScaler, amax / accelScaler, dmax / accelScaler, d1 / accelScaler, reset);
     }
     void resetToDefaultVelocitiesAndAccelerations()
     {
