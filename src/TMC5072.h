@@ -65,7 +65,7 @@ public:
 
         CSpin = spi.pinSS();
 
-        setDefaultVelocitiesAndAccelerations(_d_v1, _d_vmax, _d_a1, _d_amax, _d_dmax, _d_d1, true);
+        setDefaultVelocitiesAndAccelerations(_d_v1, _d_vmax, _d_a1, _d_amax, _d_dmax, _d_d1, false);
     }
 
     /**

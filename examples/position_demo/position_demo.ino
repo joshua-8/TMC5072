@@ -14,7 +14,7 @@ void setup()
 
     driver1.setCurrent(18, 17);
 
-    driver1.setVelocitiesAndAccelerations(0, 1.25, 1, 1, 1, 1);
+    driver1.setDefaultVelocitiesAndAccelerations(0, 1.25, 1, 1, 1, 1, true);
     driver1.setVStopAndVStartRaw(1, 10);
     driver1.clearGSTAT();
     driver1.enable();
