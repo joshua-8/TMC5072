@@ -158,7 +158,7 @@ public:
                 if (sw) {
                     xlatch = commRead(TMC5072_XACTUAL(whichMotor));
                     resetToDefaultVelocitiesAndAccelerations();
-                    moveToPositionRaw(xlatch + switchOffset / positionScaler);
+                    moveToPositionRaw(xlatch + ((uint32_t)(switchOffset / positionScaler)));
                     state = movingToFinalZero;
                 } else {
                     return 3; // didn't hit switch
