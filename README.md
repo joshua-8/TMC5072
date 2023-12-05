@@ -1,4 +1,4 @@
-Arduino library for controlling an ADI Trinamic TMC5072 stepper motor driver.
+## Arduino library for controlling an ADI Trinamic TMC5072 stepper motor driver.
 
 [![arduino-library-badge](https://www.ardu-badge.com/badge/TMC5072.svg?)](https://www.ardu-badge.com/TMC5072)
 [![PlatformIO Registry](https://badges.registry.platformio.org/packages/joshua1024/library/TMC5072.svg)](https://registry.platformio.org/libraries/joshua1024/TMC5072)

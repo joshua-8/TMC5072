@@ -338,8 +338,8 @@ public:
      */
     void setVStopAndVStartRaw(uint32_t vstart, uint32_t vstop)
     {
-        commWrite(tmc_commpact(true, VSTOP, 1, vstart));
-        commWrite(tmc_commpact(true, VSTART, 1, vstop));
+        commWrite(tmc_commpact(true, VSTOP, whichMotor, vstart));
+        commWrite(tmc_commpact(true, VSTART, whichMotor, vstop));
     }
 
     /**
