@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TMC0572: src/TMC5072.h Source File</title>
+<title>TMC5072: src/TMC5072.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TMC0572
+   <div id="projectname">TMC5072
    </div>
   </td>
  </tr>
@@ -335,8 +335,8 @@ $(function() {
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="class_t_m_c5072.html#a16ace56c83fdc165f3e4790a555befc9">  339</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_m_c5072.html#a16ace56c83fdc165f3e4790a555befc9">setVStopAndVStartRaw</a>(uint32_t vstart, uint32_t vstop)</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    {</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <a class="code hl_function" href="class_t_m_c5072.html#a4cc844e2c394d07cbc04609227165fcb">commWrite</a>(tmc_commpact(<span class="keyword">true</span>, VSTOP, 1, vstart));</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <a class="code hl_function" href="class_t_m_c5072.html#a4cc844e2c394d07cbc04609227165fcb">commWrite</a>(tmc_commpact(<span class="keyword">true</span>, VSTART, 1, vstop));</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <a class="code hl_function" href="class_t_m_c5072.html#a4cc844e2c394d07cbc04609227165fcb">commWrite</a>(tmc_commpact(<span class="keyword">true</span>, VSTOP, <a class="code hl_variable" href="class_t_m_c5072.html#a4c326875cd49509cdd2a5fcc037d947b">whichMotor</a>, vstart));</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <a class="code hl_function" href="class_t_m_c5072.html#a4cc844e2c394d07cbc04609227165fcb">commWrite</a>(tmc_commpact(<span class="keyword">true</span>, VSTART, <a class="code hl_variable" href="class_t_m_c5072.html#a4c326875cd49509cdd2a5fcc037d947b">whichMotor</a>, vstop));</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    }</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="class_t_m_c5072.html#ad104c9b6ba25dde0cc46806049a1e182">  353</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_m_c5072.html#ad104c9b6ba25dde0cc46806049a1e182">moveVelRaw</a>(int32_t speed, uint32_t accel = 0)</div>

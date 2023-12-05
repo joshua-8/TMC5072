@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tmc_2dapi_0',['TMC-API',['../md_src_trinamic__r_e_a_d_m_e.html',1,'']]],
-  ['tmc0572_1',['TMC0572',['../index.html',1,'']]]
+  ['arduino_20library_20for_20controlling_20an_20adi_20trinamic_20tmc5072_20stepper_20motor_20driver_2e_0',['Arduino library for controlling an ADI Trinamic TMC5072 stepper motor driver.',['../index.html',1,'']]]
 ];
