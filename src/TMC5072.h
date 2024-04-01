@@ -314,18 +314,24 @@ public:
         commWrite(tmc_commpact(true, AMAX, whichMotor, amax));
         if (a1 != 0)
             commWrite(tmc_commpact(true, A1, whichMotor, a1));
+        else
+            commWrite(tmc_commpact(true, A1, whichMotor, amax));
     }
     void setDecelsRaw(uint32_t dmax, uint32_t d1 = 0)
     {
         commWrite(tmc_commpact(true, DMAX, whichMotor, dmax));
         if (d1 != 0)
             commWrite(tmc_commpact(true, D1, whichMotor, d1));
+        else
+            commWrite(tmc_commpact(true, D1, whichMotor, dmax));
     }
     void setVelsRaw(uint32_t vmax, uint32_t v1 = 0)
     {
         commWrite(tmc_commpact(true, VMAX, whichMotor, vmax));
         if (v1 != 0)
             commWrite(tmc_commpact(true, V1, whichMotor, v1));
+        else
+            commWrite(tmc_commpact(true, V1, whichMotor, vmax));
     }
 
     /**
