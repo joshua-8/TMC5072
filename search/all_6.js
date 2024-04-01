@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['getdrivererrorstatus_0',['getDriverErrorStatus',['../class_t_m_c5072.html#a492b2ef9d6d22bb8bc89033933f7af9c',1,'TMC5072']]],
-  ['getdriverresetflag_1',['getDriverResetFlag',['../class_t_m_c5072.html#af33dd99746f36046ec16a7760bd59e2f',1,'TMC5072']]],
-  ['getrampstatusbits_2',['getRampStatusBits',['../class_t_m_c5072.html#a29bb68ed0b46b21280fb8a842f24b8d3',1,'TMC5072']]],
-  ['getstatusbits_3',['getStatusBits',['../class_t_m_c5072.html#ae2ad918f95cccc0156afd0044cec45c8',1,'TMC5072']]],
-  ['getstopswitchstatus_4',['getStopSwitchStatus',['../class_t_m_c5072.html#a43255e1df97da7d5f40eeadfbdb3eea5',1,'TMC5072']]],
-  ['getvelocityreachedstatus_5',['getVelocityReachedStatus',['../class_t_m_c5072.html#a17248645aae5aeb22d926327b3bcc678',1,'TMC5072']]],
-  ['github_20link_2etxt_6',['github link.txt',['../github_01link_8txt.html',1,'']]]
+  ['files_0',['files',['../license_8txt.html#a230902626bc74ad7e058274476c0ff96',1,'license.txt']]],
+  ['flipbitsinbytes_1',['flipBitsInBytes',['../_c_r_c_8c.html#a354496293840e84e5312ef9d7de895c8',1,'CRC.c']]],
+  ['flipbyte_2',['flipByte',['../_c_r_c_8c.html#af32dad8d627fe6c47b93b96b02582116',1,'CRC.c']]],
+  ['float32_5ft_3',['float32_t',['../_types_8h.html#a4611b605e45ab401f02cab15c5e38715',1,'Types.h']]],
+  ['float64_5ft_4',['float64_t',['../_types_8h.html#ac55f3ae81b5bc9053760baacf57e47f4',1,'Types.h']]],
+  ['for_20controlling_20an_20adi_20trinamic_20tmc5072_20stepper_20motor_20driver_5',['Arduino library for controlling an ADI Trinamic TMC5072 stepper motor driver.',['../index.html',1,'']]],
+  ['from_6',['FROM',['../license_8txt.html#ad5b0d9115f93ac50d86d7c9a654c7ca9',1,'license.txt']]],
+  ['functions_2ec_7',['Functions.c',['../_functions_8c.html',1,'']]],
+  ['functions_2eh_8',['Functions.h',['../_functions_8h.html',1,'']]]
 ];

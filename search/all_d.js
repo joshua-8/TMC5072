@@ -1,6 +1,12 @@
 var searchData=
 [
-  ['polynomial_0',['polynomial',['../struct_c_r_c_type_def.html#a03eaa9e0d7e5e94189eea35decc0e0c6',1,'CRCTypeDef']]],
-  ['positionscaler_1',['positionScaler',['../class_t_m_c5072.html#ab1edf5759683036ddf106b34dd1b1c87',1,'TMC5072']]],
-  ['publish_2',['publish',['../license_8txt.html#ada0e4295c02ecf483dd4971c92e92f1c',1,'license.txt']]]
+  ['macros_2eh_0',['Macros.h',['../_macros_8h.html',1,'']]],
+  ['merchantability_1',['MERCHANTABILITY',['../license_8txt.html#a8394add39a196c4852caa8c0e5450f37',1,'license.txt']]],
+  ['merge_2',['merge',['../license_8txt.html#aad4b713ca657a67ecbb454b02ceabff8',1,'license.txt']]],
+  ['modify_3',['modify',['../license_8txt.html#a84db115c842c0bc29f97fd73629d8163',1,'license.txt']]],
+  ['motor_20driver_4',['Arduino library for controlling an ADI Trinamic TMC5072 stepper motor driver.',['../index.html',1,'']]],
+  ['movetoposition_5',['moveToPosition',['../class_t_m_c5072.html#a33c49f789e55ccf3fd5420cedbb2f0f1',1,'TMC5072']]],
+  ['movetopositionraw_6',['moveToPositionRaw',['../class_t_m_c5072.html#aa12bbcca3df9b16063e2b24adb33faaa',1,'TMC5072']]],
+  ['movevel_7',['moveVel',['../class_t_m_c5072.html#a050a22de748070a45deb6c65bfe687c6',1,'TMC5072']]],
+  ['movevelraw_8',['moveVelRaw',['../class_t_m_c5072.html#ad104c9b6ba25dde0cc46806049a1e182',1,'TMC5072']]]
 ];

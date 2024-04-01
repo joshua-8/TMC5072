@@ -1,29 +1,6 @@
 var searchData=
 [
-  ['callback_0',['callback',['../struct_configuration_type_def.html#a713aded8358c7eaf78b3f97d4c5b7d9e',1,'ConfigurationTypeDef']]],
-  ['channel_1',['channel',['../struct_configuration_type_def.html#a85862109a7b056b2697830e98029a3c1',1,'ConfigurationTypeDef']]],
-  ['charge_2',['charge',['../license_8txt.html#af02105b8d25cac5346c70f0f8bebb2e8',1,'license.txt']]],
-  ['claim_3',['CLAIM',['../license_8txt.html#a6f92969b6202008d5188110d8b5e0413',1,'license.txt']]],
-  ['cleargstat_4',['clearGSTAT',['../class_t_m_c5072.html#a888ea3cc0af06577b5fba34b03a7c10c',1,'TMC5072']]],
-  ['comm_5',['comm',['../class_t_m_c5072.html#a96d9c76bf07030daddc750ce9745d689',1,'TMC5072']]],
-  ['commread_6',['commRead',['../class_t_m_c5072.html#a071b61e9756bfbca37908403987e50b9',1,'TMC5072']]],
-  ['commwrite_7',['commWrite',['../class_t_m_c5072.html#a4cc844e2c394d07cbc04609227165fcb',1,'TMC5072']]],
-  ['conditions_8',['conditions',['../license_8txt.html#a044015f5b936eb88da66708aa08bd4ac',1,'license.txt']]],
-  ['config_9',['config',['../struct_t_m_c5072_type_def.html#a2fc0581a781107ce8fede42df394011e',1,'TMC5072TypeDef']]],
-  ['config_2eh_10',['Config.h',['../_config_8h.html',1,'']]],
-  ['config_5fready_11',['CONFIG_READY',['../_config_8h.html#a68a217514c80f15824fb5b28c25c837fa777ae2d946201c3a85df1f361c1de095',1,'Config.h']]],
-  ['config_5freset_12',['CONFIG_RESET',['../_config_8h.html#a68a217514c80f15824fb5b28c25c837faf4b7eabf7d198b2f9b47d8c7a36c7d0f',1,'Config.h']]],
-  ['config_5frestore_13',['CONFIG_RESTORE',['../_config_8h.html#a68a217514c80f15824fb5b28c25c837fa7554d7ac751dd29b0f06634cdbafdcc6',1,'Config.h']]],
-  ['configindex_14',['configIndex',['../struct_configuration_type_def.html#a03e747ab5e07e7cca760bd15b4ee0743',1,'ConfigurationTypeDef']]],
-  ['configstate_15',['ConfigState',['../_config_8h.html#a68a217514c80f15824fb5b28c25c837f',1,'Config.h']]],
-  ['configurationtypedef_16',['ConfigurationTypeDef',['../struct_configuration_type_def.html',1,'']]],
-  ['constants_2eh_17',['Constants.h',['../_constants_8h.html',1,'']]],
-  ['contract_18',['CONTRACT',['../license_8txt.html#a0d659448dac5e185d9b9895b123b7735',1,'license.txt']]],
-  ['copy_19',['copy',['../license_8txt.html#a5fc027ff17a37592346d4ce949961132',1,'license.txt']]],
-  ['copyright_20',['Copyright',['../license_8txt.html#aecc4f25d737c6dbbfec7024fff8f6209',1,'license.txt']]],
-  ['crc_2ec_21',['CRC.c',['../_c_r_c_8c.html',1,'']]],
-  ['crc_2eh_22',['CRC.h',['../_c_r_c_8h.html',1,'']]],
-  ['crctables_23',['CRCTables',['../_c_r_c_8c.html#a67da2e812767527420ab1747f13c4ae7',1,'CRC.c']]],
-  ['crctypedef_24',['CRCTypeDef',['../struct_c_r_c_type_def.html',1,'']]],
-  ['cspin_25',['CSpin',['../class_t_m_c5072.html#a2a6077dfecaa3d7760a3d400f9133f58',1,'TMC5072']]]
+  ['beginspi_0',['beginSPI',['../class_t_m_c5072.html#a19f8d07f628ad4840dedcc5bad5eb724',1,'TMC5072']]],
+  ['beginspics_1',['beginSPIcs',['../class_t_m_c5072.html#ac9710394d8af85109d410791a9e0335e',1,'TMC5072']]],
+  ['bits_2eh_2',['Bits.h',['../_bits_8h.html',1,'']]]
 ];
