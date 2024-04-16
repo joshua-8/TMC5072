@@ -265,6 +265,15 @@ public:
         commWrite(tmc_commpact(true, XACTUAL, whichMotor, xactual));
     }
 
+    int32_t getXActualRaw()
+    {
+        return commRead(TMC5072_XACTUAL(whichMotor));
+    }
+    float getXActual()
+    {
+        return getXActualRaw() * positionScaler;
+    }
+
     /**
      * @brief sets the driver to position mode and sets a position target
      * @param  target: (uint32_t) target position in steps
