@@ -116,8 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a191c3fb202c360d31ad112d1cd4ffc28" id="r_a191c3fb202c360d31ad112d1cd4ffc28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a191c3fb202c360d31ad112d1cd4ffc28">setXActualRaw</a> (int32_t xactual)</td></tr>
 <tr class="separator:a191c3fb202c360d31ad112d1cd4ffc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb90068be6b3f3733e397ca1d66c1c02" id="r_afb90068be6b3f3733e397ca1d66c1c02"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#afb90068be6b3f3733e397ca1d66c1c02">getXActualRaw</a> ()</td></tr>
+<tr class="memdesc:afb90068be6b3f3733e397ca1d66c1c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the actual position of the motor  <br /></td></tr>
 <tr class="separator:afb90068be6b3f3733e397ca1d66c1c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d3df20d3f2b99bea76e6174baf74f6" id="r_a82d3df20d3f2b99bea76e6174baf74f6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a82d3df20d3f2b99bea76e6174baf74f6">getXActual</a> ()</td></tr>
+<tr class="memdesc:a82d3df20d3f2b99bea76e6174baf74f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the actual position of the motor  <br /></td></tr>
 <tr class="separator:a82d3df20d3f2b99bea76e6174baf74f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12bbcca3df9b16063e2b24adb33faaa" id="r_aa12bbcca3df9b16063e2b24adb33faaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#aa12bbcca3df9b16063e2b24adb33faaa">moveToPositionRaw</a> (uint32_t target)</td></tr>
 <tr class="memdesc:aa12bbcca3df9b16063e2b24adb33faaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the driver to position mode and sets a position target  <br /></td></tr>
@@ -126,6 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4bf047b346149cdd46c38314f497ff61"><td class="mdescLeft">&#160;</td><td class="mdescRight">set all the velocity and acceleration settings for a position control move see datasheet 6.2.1 and 11.2.2  <br /></td></tr>
 <tr class="separator:a4bf047b346149cdd46c38314f497ff61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50b166066b27058dc8b65b9e5d2a923d" id="r_a50b166066b27058dc8b65b9e5d2a923d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#a50b166066b27058dc8b65b9e5d2a923d">setDefaultVelocitiesAndAccelerationsRaw</a> (uint32_t v1, uint32_t vmax, uint32_t a1, uint32_t amax, uint32_t dmax, uint32_t d1, boolean reset=false)</td></tr>
+<tr class="memdesc:a50b166066b27058dc8b65b9e5d2a923d"><td class="mdescLeft">&#160;</td><td class="mdescRight">change the default velocity and acceleration settings  <br /></td></tr>
 <tr class="separator:a50b166066b27058dc8b65b9e5d2a923d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc81997972d6cfedbbdab3c8e1079598" id="r_abc81997972d6cfedbbdab3c8e1079598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_c5072.html#abc81997972d6cfedbbdab3c8e1079598">setAccelsRaw</a> (uint32_t amax, uint32_t a1=0)</td></tr>
 <tr class="separator:abc81997972d6cfedbbdab3c8e1079598"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -974,6 +977,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>returns the actual position of the motor </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">(float)</td><td>position in your chosen units </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="afb90068be6b3f3733e397ca1d66c1c02" name="afb90068be6b3f3733e397ca1d66c1c02"></a>
@@ -998,6 +1009,14 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns the actual position of the motor </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">(int32_t)</td><td>position in steps </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1728,6 +1747,27 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>change the default velocity and acceleration settings </p>
+<dl class="section note"><dt>Note</dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td></td></tr>
+    <tr><td class="paramname">vmax</td><td></td></tr>
+    <tr><td class="paramname">a1</td><td></td></tr>
+    <tr><td class="paramname">amax</td><td></td></tr>
+    <tr><td class="paramname">dmax</td><td></td></tr>
+    <tr><td class="paramname">d1</td><td></td></tr>
+    <tr><td class="paramname">reset</td><td>reset the active velocity and acceleration settings to the new default values </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

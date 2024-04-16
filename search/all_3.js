@@ -23,7 +23,7 @@ var searchData=
   ['contract_20',['CONTRACT',['../license_8txt.html#a0d659448dac5e185d9b9895b123b7735',1,'license.txt']]],
   ['controlling_20an_20adi_20trinamic_20tmc5072_20stepper_20motor_20driver_21',['Arduino library for controlling an ADI Trinamic TMC5072 stepper motor driver.',['../index.html',1,'']]],
   ['copy_22',['copy',['../license_8txt.html#a5fc027ff17a37592346d4ce949961132',1,'license.txt']]],
-  ['copyright_23',['Copyright',['../license_8txt.html#aecc4f25d737c6dbbfec7024fff8f6209',1,'license.txt']]],
+  ['copyright_23',['Copyright',['../license_8txt.html#a391f9217140ed6d9a806605112a74a8b',1,'license.txt']]],
   ['crc_2ec_24',['CRC.c',['../_c_r_c_8c.html',1,'']]],
   ['crc_2eh_25',['CRC.h',['../_c_r_c_8h.html',1,'']]],
   ['crctables_26',['CRCTables',['../_c_r_c_8c.html#a67da2e812767527420ab1747f13c4ae7',1,'CRC.c']]],
