@@ -265,10 +265,18 @@ public:
         commWrite(tmc_commpact(true, XACTUAL, whichMotor, xactual));
     }
 
+    /**
+     * @brief  returns the actual position of the motor
+     * @retval (int32_t) position in steps
+     */
     int32_t getXActualRaw()
     {
         return commRead(TMC5072_XACTUAL(whichMotor));
     }
+    /**
+     * @brief  returns the actual position of the motor
+     * @retval (float) position in your chosen units
+     */
     float getXActual()
     {
         return getXActualRaw() * positionScaler;
@@ -305,6 +313,18 @@ public:
         commWrite(tmc_commpact(true, DMAX, whichMotor, dmax));
         commWrite(tmc_commpact(true, D1, whichMotor, d1));
     }
+    /**
+     * @brief  change the default velocity and acceleration settings
+     * @note
+     * @param  v1:
+     * @param  vmax:
+     * @param  a1:
+     * @param  amax:
+     * @param  dmax:
+     * @param  d1:
+     * @param  reset: reset the active velocity and acceleration settings to the new default values
+     * @retval None
+     */
     void setDefaultVelocitiesAndAccelerationsRaw(uint32_t v1, uint32_t vmax, uint32_t a1, uint32_t amax, uint32_t dmax, uint32_t d1, boolean reset = false)
     {
         d_v1 = v1;
